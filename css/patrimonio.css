@@ -1,0 +1,102 @@
+body {
+    background-color: #f0e4d7; /* Fondo ocre claro */
+    color: #4a3d31; /* Texto marrón oscuro */
+    font-family: 'Georgia', serif; /* Fuente con un toque clásico */
+}
+
+.falling-element{
+    position: absolute;
+    font-size: 2rem;
+    top: -50px;
+    animation: fall 3s linear infinite;
+}
+@keyframes fall{
+    0% { transform: translateY(-50px);}
+    100% { transform: translateY(250px);}
+}
+.element1 { left: 30%; animation-delay: 1s;}
+.element2 { left: 45%; animation-delay: 0.5s;}
+.element3 { left: 60%; animation-delay: 1s;}
+.element4 { left: 75%; animation-delay: 0.5s;}
+
+.banner {    
+    position: relative;
+    background-image: url("../imgPatrim/Banner_3.jpg"); 
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: cinzel, serif;
+}
+@keyframes wave {
+    0%, 100% { transform: translateX(0) translateY(0);}
+    25% { transform: translateX(25%) translateY(-20px);}
+    50% { transform: translateX(50%) translateY(0);}
+    75% { transform: translateX(75%) translateY(20px);}
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #8b5e3c; /* Encabezados en tono marrón oscuro */
+    text-shadow: 1px 1px 2px #654321; /* Sombra para efecto elegante */
+    text-align: center;
+}
+
+a {
+    color: #a0522d; /* Color marrón para los enlaces */
+    text-decoration: none;
+}
+a:hover {
+    color: #8b5e3c; /* Color más claro al pasar el ratón por encima */
+}
+
+nav {
+    background-color: #c19a6b; /* Color marrón claro para la barra de navegación */
+    padding: 0;
+    text-align: center;
+    border-bottom: 1px solid #8b5e3c; /* Borde inferior en marrón oscuro */
+    display: flex;
+}
+nav a {
+    color: #4a3d31;
+    margin: 0 10px;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 10px;
+    display: inline;
+}
+
+main {
+    padding: 20px;
+    border-top: 1px solid #8b5e3c; /* Borde superior en marrón oscuro */
+}
+
+footer {
+    background-color: #d2b48c;
+    color: #4a3d31;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #8b5e3c; /* Borde superior en marrón oscuro */
+}
+footer img {
+    border-radius: 50%; /* Bordes redondeados */
+    transition: transform 0.5s ease; /* Transición suave */
+}
+footer img:hover {
+    transform: scale(1.5); /* Aumenta el tamaño al pasar el ratón */
+}
+
