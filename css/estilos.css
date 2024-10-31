@@ -57,7 +57,6 @@ nav ul li a {
     text-decoration: none;
     color: #d49138; /*#fff*/
 }
-<<<<<<< HEAD
 /* estilos para el desplegable del nav */
 .dropdown { 
     position: relative; 
@@ -109,27 +108,14 @@ nav ul li a {
     width: 50%; /* Ajusta según sea necesario */
     height: 50%; /* Ajusta según sea necesario */
     overflow: hidden;
-=======
-#gif_imag {
-    width: 20px;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: pulseGif 2s ease-in-out infinite;
->>>>>>> parent of 23a79ee (28-oct-2024)
 }
 .gif-animado {
     width: 99%;
     height: 99%;
     object-fit: cover;
 }
-<<<<<<< HEAD
 
 /* Título con sombras en 3d */
-=======
->>>>>>> parent of 23a79ee (28-oct-2024)
 .title {
     font-size: 7em;
     color: white;
@@ -185,13 +171,9 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
     justify-content: center;
     min-height: 30vh;
     width: 100%;
-=======
-    margin: 20px;
->>>>>>> parent of 23a79ee (28-oct-2024)
     position: relative;
 }
 #chaplin {
@@ -280,6 +262,10 @@ h2, h3 {
     background: #fff;
     font-size: 15px;
 }
+.acordeon-contenido p{ 
+    margin: 15px;
+    margin: 15px;
+}  
 .hero-section {
     position: relative;
     width: 100%;
@@ -338,12 +324,9 @@ h2, h3 {
     text-align: justify;
     position: relative;
     z-index: 2;
-    max-width: 800px;
-<<<<<<< HEAD
+    overflow: hidden;
     color: white;
     margin: 0 2px 0 5px;
-=======
->>>>>>> parent of 23a79ee (28-oct-2024)
 }
 .acordeon-item.activo .acordeon-header::after {
     content: '-';
@@ -453,7 +436,6 @@ h2, h3 {
     }
 }
 
-<<<<<<< HEAD
 .presentacion {
     position: relative;
     width: 80%;
@@ -552,8 +534,6 @@ h2, h3 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */ 
     border-radius: 10px; /* Bordes redondeados */
 }
-=======
->>>>>>> parent of 23a79ee (28-oct-2024)
 
 /* noticias */
 .noticias {

@@ -8,14 +8,20 @@
 </head>
 <body>
     <header>
-            <h1>Hablemos de Patrimonio Fílmico</h1>
-            <div class="banner">
-                <div class="title">Cine como Patrimonio</div>
+        <div class="banner">
+            <h1 class="titulo-patrimonio">El Cine legado Cultural en movimiento</h1>
+            <div class="cameras-container"> 
+                <img src="camara-icono.png" alt="Cámara" class="camara"> 
+                <img src="camara-icono.png" alt="Cámara" class="camara"> 
+                <img src="camara-icono.png" alt="Cámara" class="camara">
             </div>
-            <div class="falling-element element1"></div>
-            <div class="falling-element element2"></div>
+        </div>
+
+            <div class="falling-element element1">🎥</div>
+            <div class="falling-element element2">🎬</div>
+            <div class="falling-element element4">📹</div>            
             <div class="falling-element element3">📽</div>
-            <div class="falling-element element4">📹</div>
+
             <nav>
                 <ul>
                     <li><a href="#inicio"></a></li>
@@ -27,15 +33,47 @@
             </nav>
     </header>
     <main>
-        <h2>Desde 1980, la Unesco ha recomendado la salvaguarda y la conservación de las imágenes en movimiento,
-            con lo cual se reconocen oficialmente las películas,
-            la televisión y las grabaciones sonoras como parte del patrimonio cultural</h2>
+        <h2>Patrimonio Audiovisual</h2>
+            <p>Desde 1980, la Unesco ha recomendado la salvaguarda y la conservación de las imágenes en movimiento, se reconocen oficialmente las películas, la televisión y las grabaciones sonoras como parte del patrimonio cultural.
         <br>
         <h3>¿Qué es el Patrimonio Fílmico?</h3>
             <h4>Evolución de los formatos fílmicos</h4>
+                <p>La evolución de los formatos fílmicos ha sido un proceso continuo desde la invención del cine hasta la actualidad. La evolución de los formatos fílmicos desde el nitrato hasta el DCP pasa por:
+                    <li>Nitrato (1888-1910): El nitrato de celulosa fue el primer material utilizado para filmar películas. Era un material inflamable y peligroso, lo que llevó a la industria cinematográfica a buscar alternativas más seguras.</li>
+                    <li>Acetato (1910-1950): El acetato de celulosa reemplazó al nitrato como material de filmación. Era más seguro y duradero, pero todavía tenía sus limitaciones.</li>
+
+<!-- Eastmancolor (1950-1980): La Eastman Kodak introdujo el Eastmancolor, un material de filmación que combinaba la sensibilidad del acetato con la estabilidad del color. Fue un gran avance en la calidad de la imagen y se convirtió en el estándar de la industria.
+VHS (1970-1990): La introducción de la videocasetera (VHS) revolucionó la forma en que se consumía el cine en casa. Los casetes VHS permitieron a los espectadores grabar y reproducir películas en su propio hogar.
+Betacam (1980-1990): La Betacam fue un formato de grabación de video profesional que se utilizó para producir y transmitir programas de televisión. Era más pequeño y ligero que los formatos anteriores y ofrecía una mejor calidad de imagen.
+Digital Betacam (1990-2000): La Digital Betacam fue un formato de grabación digital que reemplazó a la Betacam. Ofrecía una mejor calidad de imagen y era más fácil de utilizar.
+DigiBeta (2000-2010): La DigiBeta fue un formato de grabación digital que se utilizó para producir y transmitir programas de televisión. Era más pequeño y ligero que los formatos anteriores y ofrecía una mejor calidad de imagen.
+DCP (2000-presente): El DCP (Digital Cinema Package) es un formato de distribución digital que se utiliza para proyectar películas en cines. Es un formato estándar que se utiliza en todo el mundo y ofrece una mejor calidad de imagen y sonido que los formatos anteriores.
+En resumen, la evolución de los formatos fílmicos ha sido un proceso continuo desde la invención del cine hasta la actualidad. Cada formato ha ofrecido mejoras en la calidad de la imagen y la facilidad de uso, lo que ha permitido a la industria cinematográfica evolucionar y mejorar constantemente. -->
 
         <h3>¿En qué consiste el Proceso de Conservación y Preservación?</h3>
             <ul>
+                <li>Conservación</li>
+                <li>Restauración</li>
+                <li>Preservación</li>
+            </ul>
+        <h3>¿Qué son las Filmotecas?</h3>
+            <p>Las filmotecas son instituciones dedicadas a la recuperación, conservación y difusión del patrimonio cinematográfico. Su misión es preservar películas, documentales y otros materiales audiovisuales para que puedan ser estudiados y disfrutados por futuras generaciones</p>
+            <p>Funciones de las Filmotecas:
+                Las filmotecas tienen varias funciones clave:
+
+                Recuperación y restauración: Trabajan para recuperar películas y documentales que podrían estar en mal estado.
+                
+                Conservación: Utilizan técnicas avanzadas para asegurar que las películas se conserven de manera adecuada.
+                
+                Difusión: Organizan ciclos de cine, exposiciones y actividades educativas para compartir el patrimonio cinematográfico con el público.
+                
+                Investigación: Realizan estudios y publicaciones sobre la historia del cine y su impacto cultural</p>
+            <ul>
+                La Federación Internacional de Archivos Fílmicos (FIAF)
+La FIAF fue fundada en 1938 y tiene su sede en Bruselas. Su misión es promover la cooperación internacional entre los archivos fílmicos y asegurar la preservación del patrimonio cinematográfico a nivel global. Actualmente, cuenta con más de 180 miembros en 77 países2.
+
+Importancia de las Filmotecas y FIAF
+Las filmotecas y la FIAF juegan un papel crucial en la preservación de la memoria cultural a través del cine. Al conservar y difundir películas, ayudan a mantener viva la historia y la cultura de diferentes sociedades.
                 <li>Conservación</li>
                 <li>Restauración</li>
                 <li>Preservación</li>
@@ -44,6 +82,25 @@
         <div>
             
         </div>
+    <section id="formularios">
+        <form id="registrationForm" action="procesos.php" method="POST">
+            <h3>Formulario de acceso</h3>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>            
+            <label for="role">Rol:</label>
+            <select id="role" name="role" required>
+                <option value="colaborador">Colaborador</option>
+                <option value="usuario">Usuario</option>
+            </select<>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
 
     </main>
 
@@ -52,5 +109,6 @@
         <img src="favicon.ico" alt="Logo">
     </footer>
 
+    <script src="js/patrimonio.js"></script>
 </body>
 </html>

@@ -1,18 +1,27 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.acordeon-header').forEach(button => {
-        button.addEventListener('click', () => {
-            const acordeonItem = button.parentElement;
+    const acordeonHeaders = document.querySelectorAll('.acordeon-header');
+
+    acordeonHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const acordeonItem = this.parentElement;
+            const contenido = acordeonItem.querySelector('.acordeon-contenido');
             
             // Cierra todos los demás items
             document.querySelectorAll('.acordeon-item').forEach(item => {
                 if (item !== acordeonItem) {
                     item.classList.remove('activo');
+                    item.querySelector('.acordeon-contenido').style.maxHeight = null;
                 }
             });
             
             // Toggle del item actual
             acordeonItem.classList.toggle('activo');
+            if (contenido.style.maxHeight){
+                contenido.style.maxHeight = null;
+            }else{
+                contenido.style.maxHeight = contenido.scrollHeight + "px";
+            }
         });
     });
 });
