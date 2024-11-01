@@ -16,8 +16,9 @@
         </div>
         <div class="falling-element element1">🎥</div>
         <div class="falling-element element2">🎬</div>
-        <div class="falling-element element3">📽</div>
+        <div class="falling-element element3">🎞️</div>
         <div class="falling-element element4">📹</div>
+        <div class="falling-element element5">📽</div>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -29,7 +30,14 @@
                     </div>
                 </li>
                 <li><a href="#galeria">Galería</a></li>
-                <li><a href="#enlaces">Enlaces</a></li>
+                <li class="dropdown"> 
+                    <a href="javascript:void(0)" class="dropbtn">Enlaces</a>
+                    <div class="dropdown-content">
+                        <a href="#noticias" target="_blank">Noticias</a> 
+                        <a href="#enlaces-pag" target="_blank">Páginas de Cine y Patrimonio
+                    </div>
+                </li>
+
                 <li><a href="#formularios">Contacto</a></li>
             </ul>
         </nav>
@@ -44,7 +52,6 @@
               </div>
             </div>
         </section>
-        <br><br><br>
 
         <div class="sidebar">
             <ul class="social-icons">
@@ -54,7 +61,6 @@
                 <li><a href="https://www.linkedin.com/company/tupagina" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
         </div>
-<br><br>
         <section id="inicio">
             <div class="acordeon">
                 <h2>Cine: Más Allá de la Pantalla</h2>
@@ -69,7 +75,7 @@
                                 <p>El <strong>CINE</strong> es una forma de arte y entretenimiento que utiliza la proyección de imágenes en movimiento para contar historias, transmitir ideas y emociones.<br>
                                 La historia del cine es fascinante y abarca más de un siglo de innovaciones tecnológicas, artísticas y culturales. <br>
                                 Cuando se habla del nacimiento del cine se toma como referencia la fecha del 28 de diciembre de 1895, en la que se proyectaron al público las primeras películas realizadas por los hermanos Auguste y Louis Lumière, en la memorable sesión realizada en el Salón Indio del Gran Café de París. <br>
-                                <strong>Definición:</strong> El cine, también conocido como cinematografía, es la técnica y el arte de crear y proyectar películas. Se basa en la captura y reproducción de imágenes en movimiento, lo que genera la ilusión de movimiento continuo<p><br>
+                                <strong>Definición:</strong> El cine, también conocido como cinematografía, es la técnica y el arte de crear y proyectar películas. Se basa en la captura y reproducción de imágenes en movimiento, lo que genera la ilusión de movimiento continuo<p>
                                 <ul><strong>Elementos del Cine</strong>
                                     <li><strong>Técnica: </strong>Incluye la grabación de fotogramas a una velocidad que el ojo humano percibe como movimiento continuo. Las películas suelen grabarse a 24 fotogramas por segundo2.</li> 
                                     <li><strong>Narrativa:</strong> El cine es una forma de narrar historias visualmente, combinando elementos como el guion, la dirección, la actuación, la fotografía y el montaje2.</li>
@@ -213,7 +219,8 @@
                 </div>
             </div>
         </section>
-    
+
+    <h2>Galería de imágenes</h2>
     <div class="galleries-container" id="galeria">
         <div class="gallery gallery-left"> 
             <h3>Inicios del Cine</h3>
@@ -235,7 +242,7 @@
                 <button class="carousel-button prev" onclick="moveSlide('carousel-left', -1)">&#10094;</button>
                 <button class="carousel-button next" onclick="moveSlide('carousel-left', 1)">&#10095;</button>
                 <button class="autoplay-button" onclick="toggleAutoplay('carousel-left')">
-                    <span class="play-icon">▶</span>
+                    <span class="play-icon">▶️</span>
                     <span class="pause-icon" style="display: none;">⏸</span>
                 </button>
             </div>
@@ -259,7 +266,7 @@
                 <button class="carousel-button prev" onclick="moveSlide('carousel-center', -1)">&#10094;</button>
                 <button class="carousel-button next" onclick="moveSlide('carousel-center', 1)">&#10095;</button>
                 <button class="autoplay-button" onclick="toggleAutoplay('carousel-center')">
-                    <span class="play-icon">▶</span>
+                    <span class="play-icon">▶️</span>
                     <span class="pause-icon" style="display: none;">⏸</span>
                 </button>
             </div>
@@ -283,7 +290,7 @@
                 <button class="carousel-button prev" onclick="moveSlide('carousel-right', -1)">&#10094;</button>
                 <button class="carousel-button next" onclick="moveSlide('carousel-right', 1)">&#10095;</button>
                 <button class="autoplay-button" onclick="toggleAutoplay('carousel-right')">
-                    <span class="play-icon">▶</span>
+                    <span class="play-icon">▶️</span>
                     <span class="pause-icon" style="display: none;">⏸</span>
                 </button>
             </div>
@@ -293,27 +300,27 @@
 <section id="patrimonio">
     <h2>Patrimonio Fílmico</h2>
 <!-- Opción 1: Video único -->
-<div class="video-container">
-    <video controls width="100%">
+    <div class="video-container">
+        <video controls width="100%">
         <h3>Caracas 1935 (Venezuela)</h3>
         <source src="" type="video/mp4">
         Tu navegador no soporta el elemento de video.
-    </video>
-</div>
+        </video>
+    </div>
 
 <!-- Opción 2: Galería de videos -->
-<div class="video-gallery">
-    <h3>Cine Interactivo</h3>
-    <div class="carteles">
-        <img src="carteles/A is for Atom.jpg" alt="A es para átomo" class="cartel" onclick="mostrarVideo ('video1')">
-        <img src="carteles/A_Star_Is_Born.jpg" alt="Ha nacido una estrella" class="cartel" onclick="mostrarVideo('video2')">
-        <img src="carteles/How animated cartoons are made.jpg" alt="¿Cómo se hacen los dibujos animados?" class="cartel" onclick="mostrarVideo('video3')">
-        <img src="carteles/I_Wanna_Be_a_Sailor.jpg" alt="Quiero ser marinero" class="cartel" onclick="mostrarVideo('video4')">
-        <img src="carteles/Life_with_Father.jpg" alt="Vida con papá" class="cartel" onclick="mostrarVideo('video5')">
-        <img src="carteles/It's_a_Wonderful_Life.jpeg" alt="Que bello es vivir" class="cartel" onclick="mostrarVideo('video6')">
-    </div>
-    <div class="video-container">
-        <h3>Películas</h3>
+    <div class="video-gallery">
+        <h3>Cine Interactivo</h3>
+        <div class="carteles">
+            <img src="carteles/A is for Atom.jpg" alt="A es para átomo" class="cartel" onclick="mostrarVideo ('video1')">
+            <img src="carteles/A_Star_Is_Born.jpg" alt="Ha nacido una estrella" class="cartel" onclick="mostrarVideo('video2')">
+            <img src="carteles/How animated cartoons are made.jpg" alt="¿Cómo se hacen los dibujos animados?" class="cartel" onclick="mostrarVideo('video3')">
+            <img src="carteles/I_Wanna_Be_a_Sailor.jpg" alt="Quiero ser marinero" class="cartel" onclick="mostrarVideo('video4')">
+            <img src="carteles/Life_with_Father.jpg" alt="Vida con papá" class="cartel" onclick="mostrarVideo('video5')">
+            <img src="carteles/It's_a_Wonderful_Life.jpeg" alt="Que bello es vivir" class="cartel" onclick="mostrarVideo('video6')">
+        </div>
+        <div class="video-container">
+            <h3>Películas</h3>
         <div class="video-wrapper" id="video1">
             <video controls>
                 <source src="" type="video/mp4">
@@ -362,58 +369,64 @@
     </div>
 </section>
 
-<div class="marco">
-    <img src="img/film-frame-collection-1.jpg" alt="Marco de película" class="marco-fondo">
-    <div class="gif-container">
-        <img src="img/Horse_animated.gif" alt="GIF animado" class="gif-animado">
+<div class="contenido-lado">
+    <div class="marco">
+        <img src="img/film-frame-collection-1.jpg" alt="Marco de película" class="marco-fondo">
+        <div class="gif-container">
+            <img src="img/Horse_animated.gif" alt="GIF animado" class="gif-animado">
+        </div>
+        <p>"El caballo en movimiento", <br>
+        Eadweard Muybridge (1878)</p>
     </div>
-    <p>"El caballo en movimiento", <br>
-    Eadweard Muybridge (1878)</p>
+    <div class="texto-al-lado">
+        <h3>¿Cómo se hizo la primera fotografía secuencial?</h3>
+        <p>El caballo en movimiento de Eadweard Muybridge es la primera fotografía secuencial conocida, fue un experimento visual realizado entre 1872 y 1878 en los Estados Unidos por el fotógrafo e investigador británico. Fue capturada en 1878 y utilizado por el entonces gobernador californiano Leland Stanford para investigar si el galope de un caballo hacía que los cuatro cascos estuvieran en el aire al mismo tiempo. Eadweard ideó un plan que consistía en colocar 12 cámaras a lo largo de una pista de carreras para captar al caballo en pleno galope con un número importante de sábanas blancas a manera de fondo para hacer la silueta del caballo más notoria. <br> Los resultados mostraron que, efectivamente, un caballo tenía todas las pezuñas en el aire brevemente mientras galopaba. <br> La obra de Eadweard inspiró a muchos otros a hacer sus propios experimentos con la fotografía secuencial y algunos incluso la han considerado una forma de imagen en movimiento. El ingenio de Muybridge y sus futuros trabajos dentro de este campo de estudio serían clave para la invención del cinematógrafo de los hermanos Lumière y el asentamiento de las bases que, casi veinte años después, originarían lo que hoy en día conocemos como cine.</p>
+    </div>
 </div>
-    <section id="enlaces">
-        <h2>Enlaces a Dominio Público</h2>
-        <div class="noticias">
-            <h3>Noticias</h3>
-            <div class="noticia">
-                <div class="img-container zoom-effect">
+
+<section id="enlaces">
+    <div id="noticias">
+        <h2>Noticias</h2>
+        <div class="noticia">
+            <div class="img-container zoom-effect">
                 <img src="img/MiniWimWenders-L1024.jpg" class="noticia-img" alt="Noticia 1"></div>
-                <div class="contenido">
+            <div class="contenido">
                 <h4>Wim Wenders recibe el premio FIAF 2024 en el Maratón de Cine Clásico de Budapest</h4>
                 <p>La FIAF entregó su Premio FIAF 2024 al aclamado cineasta alemán Wim Wenders durante una ceremonia especial en Budapest, Hungría, como parte de la 7ª edición del Maratón de Cine Clásico de Budapest. <a href="https://www.fiafnet.org/pages/Events/wim-wenders-2024-fiaf-award.html" target="_blank">Leer más</a></p>
-                </div>
             </div>
-            <div class="noticia">
-                <div class="img-container zoom-effect">
+        </div>
+        <div class="noticia">
+            <div class="img-container zoom-effect">
                 <img src="img/RamonRubio.jpg" class="noticia-img" alt="Noticia 2"></div>
-                <div class="contenido">
+            <div class="contenido">
                 <h4>Ramón Rubio Lucia, Premio Nacional de Patrimonio Cinematográfico y Audiovisual 2024</h4>
                 <p>El fallo del jurado ha destacado "su incansable, coherente y entusiasta dedicación" en la recuperación de películas y del material documental <a href="https://www.elperiodico.com/es/ocio-y-cultura/20241004/rubio-lucia-premio-nacional-patrimonio-cinematografico-108919746" target="_blank">Leer más</a></p>
-                </div>
             </div>
-            <div class="noticia">
-                <div class="img-container zoom-effect">
+        </div>
+        <div class="noticia">
+            <div class="img-container zoom-effect">
                 <img src="img/patrimonio.png" class="noticia-img" alt="Noticia 2"></div>
-                <div class="contenido">
+            <div class="contenido">
                 <h4>Día Mundial del Patrimonio Audiovisual 2024</h4>
                 <p>Cada 27 de octubre, los archivos audiovisuales de todo el mundo conmemoran el Día Mundial del Patrimonio Audiovisual. Esta fecha es una iniciativa clave de la UNESCO y del Consejo Coordinador de Asociaciones de Archivos Audiovisuales (CCAAA) para celebrar el trabajo de los archivos y sensibilizar sobre la importancia y urgencia de proteger los materiales <a href="https://patrimonioaudiovisual.org/2024/10/27/dia-mundial-del-patrimonio-audiovisual-2023-2/" target="_blank">Leer más</a></p>
-                </div>
             </div>
-            <!-- Añade más noticias aquí -->
         </div>
+            <!-- Añade más noticias aquí -->
+    </div>
 <br>
-        <div id="contenedor-enlaces">      
-            <h3>Enlace a páginas con películas para descargar</h3>
+    <div id="enlaces-pag">      
+        <h2>Páginas con películas para descargar</h2>
             <p>El cine es una forma de transmisión de la cultura universal de todos los tiempos. Nuestra sociedad se va formando e informando a través del cine y las películas, reportajes o documentales, que permiten otro tipo de acercamiento.</p>
             <ul>
-                <li>
-                    <p><a href="https://archive.org/details/moviesandfilms" target="Archive.org">Internet Archive</a> es el sitio ideal para disfrutar de 5000 películas de dominio público de forma totalmente gratuita (y legal, no lo olvides).</p>
-                </li>
-                <li> 
-                    <p><a href="https://classiccinemaonline.com/" target="Classic Cinema">Cine Clásico:</a> las joyas del cine en blanco y negro y los grandes clásicos del Séptimo Arte, se pueden encontrar una buena parte de estas películas.</p>
-                </li>
-                <li> 
-                    <p><a href="http://www.dedominiopublico.org/peliculas/" target="De Dominio">De Dominio Público:</a> más de 500 películas pertenecientes al Dominio Público u ofrecidas a través de sus canales oficiales, para ver online, en versiones originales, subtituladas y en español.</p>
-                </li>
+            <li>
+                <p><a href="https://archive.org/details/moviesandfilms" target="Archive.org">Internet Archive</a> es el sitio ideal para disfrutar de 5000 películas de dominio público de forma totalmente gratuita (y legal, no lo olvides).</p>
+            </li>
+            <li> 
+                <p><a href="https://classiccinemaonline.com/" target="Classic Cinema">Cine Clásico:</a> las joyas del cine en blanco y negro y los grandes clásicos del Séptimo Arte, se pueden encontrar una buena parte de estas películas.</p>
+            </li>
+            <li> 
+                <p><a href="http://www.dedominiopublico.org/peliculas/" target="De Dominio">De Dominio Público:</a> más de 500 películas pertenecientes al Dominio Público u ofrecidas a través de sus canales oficiales, para ver online, en versiones originales, subtituladas y en español.</p>
+            </li>
             </ul>
         </div>
     </section>

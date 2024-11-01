@@ -16,10 +16,11 @@ body {
     0% { transform: translateY(-50px);}
     100% { transform: translateY(250px);}
 }
-.element1 { left: 30%; animation-delay: 1s;}
-.element2 { left: 45%; animation-delay: 0.5s;}
-.element3 { left: 60%; animation-delay: 1s;}
-.element4 { left: 75%; animation-delay: 0.5s;}
+.element1 { left: 20%; animation-delay: 1s;}
+.element2 { left: 35%; animation-delay: 0.5s;}
+.element3 { left: 50%; animation-delay: 1s;}
+.element4 { left: 65%; animation-delay: 0.5s;}
+.element5 { left: 80%; animation-delay: 0.5s;}
 
 .banner {    
     position: relative;
@@ -43,9 +44,9 @@ body {
 }
 
 header{
-    background-color: #8b4513;
+    background-color: #834a21;
     text-align: center;
-    padding: 50px 20px;
+    padding: 10px 10px;
     position: relative;
     overflow: hidden;
 }
@@ -89,22 +90,29 @@ header{
     100% { transform: translateX(0); }
 }
 
-.camara {
-    width: 50px;
-    height: 50px;
-    margin: 0 10px;
-    animation: moveHorizontal 5s linear infinite;
-}
 @keyframes moveHorizontal {
     0% { transform: translateX(0); }
     50% { transform: translateX(100px); }
     100% { transform: translateX(0); }
 }
-
+.negativo-container { 
+    width: 100%; 
+    overflow: hidden; 
+    position: relative; 
+    margin: 15px 0;
+} 
+.negativo-pelicula { 
+    width: 100%; 
+    animation: deslizar 10s linear infinite; 
+} 
+@keyframes deslizar { 
+    0% { transform: translateX(0); } 
+    100% { transform: translateX(-50%); }
+}
 main {
     position: relative;
     min-height: 100vh;
-    padding: 20px;
+    padding: 35px;
 }
 main::before {
     content: "";
