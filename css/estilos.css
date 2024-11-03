@@ -367,7 +367,7 @@ h2, h3 {
     z-index: 2;
     overflow: hidden;
     color: white;
-    margin: 0 2px 0 5px;
+    margin: 0 10px 0 2px;
 }
 .acordeon-item.activo .acordeon-header::after {
     content: '-';
