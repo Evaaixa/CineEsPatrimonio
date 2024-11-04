@@ -63,6 +63,8 @@ function mostrarVideo(id) {
     videoElement.play(); 
     
     mostrarInfo(id); 
+
+    videoElement.scrollIntoView({ behavior: 'smooth'});
 } 
 
 function cerrarVideo(id) { 

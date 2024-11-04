@@ -476,7 +476,36 @@ h2, h3 {
         height: 300px;
     }
 }
-
+/* Botón de búsqueda externa */
+.search-container { 
+    display: flex; 
+    justify-content: center; 
+    margin: 20px 0; 
+} 
+.search-bar { 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 2px solid #8b4513; 
+    border-radius: 5px 0 0 5px; 
+    outline: none; 
+    width: 300px; /* Ajusta según sea necesario */ 
+} 
+.search-bar:focus { 
+    border-color: #cd853f; 
+} 
+button { 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: 2px solid #8b4513; 
+    border-radius: 0 5px 5px 0; 
+    background-color: #8b4513; 
+    color: white; 
+    cursor: pointer; 
+    outline: none; 
+} 
+button:hover { 
+    background-color: #cd853f;
+}
 .presentacion {
     position: relative;
     width: 80%;
@@ -576,10 +605,21 @@ h2, h3 {
     border-radius: 10px; /* Bordes redondeados */
 }
 
-/* noticias */
-noticias {
-    width: 40%;
-    margin: 0 0 0 auto;
+/* enlaces externos y noticias */
+#enlaces-externos {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#noticias,
+#enlaces-pag {
+    flex: 1;
+    min-width: 0;
+}
+#noticias {
     padding: 20px;
     background-color: #d2b48c;
     border-radius: 8px;
@@ -630,6 +670,41 @@ noticias {
 .noticia a:hover {
     text-decoration: underline;
 }
+#enlaces-pag {
+    background-color: #d2b48c;
+    border-radius: 8px;
+    border: 2px solid #704214;
+    padding: 20px;
+    font-size: small;
+}
+#enlaces-pag h2 {
+    color: #704214;
+    margin-top: 0;
+}
+#enlaces-pag ul {
+    list-style: none;
+    padding-left: 0;
+}
+#enlaces-pag li {
+    margin-bottom: 1rem;
+}
+#enlaces-pag a {
+    color: #6d4318;
+    text-decoration: none;
+}
+#enlaces-pag a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    #enlaces-externos {
+        flex-direction: column;
+    }
+    #noticias,
+    #enlaces-pag {
+        width: 100%;
+    }
+}
+
 /* estilos para los formularios */
 #formularios {
     display: flex;
