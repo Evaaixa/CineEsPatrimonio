@@ -33,6 +33,14 @@ const peliculas = [
     },
     {
         id: "video5",
+        titulo: "Vampiros en La Habana",
+        director: "Juan Padrón",
+        ano: 1985,
+        pais: "Cuba",
+        sinopsis: ""
+    },
+    {
+        id: "video6",
         titulo: "Vida con Papá",
         director: "Michael Curtiz",
         ano: 1947,
@@ -40,7 +48,7 @@ const peliculas = [
         sinopsis: "En el domicilio neoyorquino del señor Clarence Day, un hombre que ha hecho fortuna en los negocios y gobierna su casa y a su familia con la mentalidad y los escrúpulos de un contable. La llegada de la tía Cora, acompañada de una jovencita encantadora, y la declaración del señor Day de que no ha sido bautizado produce una conmoción en la familia."
     },
     {
-        id: "video6",
+        id: "video7",
         titulo: "Que bello es vivir",
         director: "Frank Capra",
         ano: 1946,

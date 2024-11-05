@@ -187,3 +187,34 @@ document.querySelectorAll('.carousel-button').forEach(button => {
 
 // Inicializar cuando el documento esté listo
 document.addEventListener('DOMContentLoaded', initCarousels); 
+
+// Botón volver arriba
+const btnVolverArriba = document.getElementById('btnVolverArriba');
+
+// Mostrar el botón cuando se scrollea hacia abajo
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        btnVolverArriba.style.display = "block";
+    }else {
+        btnVolverArriba.style.display = "none";
+    }
+};
+
+// Función para volver arriba suavemente
+btnVolverArriba.addEventListener('click', function(){
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+ /* Función para scroll suave en los enlaces del nav */
+ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

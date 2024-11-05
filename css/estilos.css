@@ -236,7 +236,7 @@ nav ul li a {
 main {
     position: relative;
     min-height: 100vh;
-    padding: 20px;
+    padding-bottom: 60px;
 }
 main::before {
     content: "";
@@ -532,6 +532,10 @@ button:hover {
 }
 /*  Estilos para la galería de películas*/
 /* Estilos para un video único */
+.video-gallery {
+    text-align: center;
+    font-size: small;
+}
 .video-container {
     max-width: 800px;
     margin: 2rem auto;
@@ -544,7 +548,6 @@ button:hover {
     width: 100%;
     border-radius: 4px;
 }
-
 .carteles {
     display: flex;
     gap: 10px;
@@ -557,7 +560,6 @@ button:hover {
     height: auto;
     cursor: pointer;
 }
-
 .video-container {
     width: 100%;
     max-width: 800px;
@@ -675,7 +677,7 @@ button:hover {
     border-radius: 8px;
     border: 2px solid #704214;
     padding: 20px;
-    font-size: small;
+    text-align: justify;
 }
 #enlaces-pag h2 {
     color: #704214;
@@ -713,6 +715,7 @@ button:hover {
     margin: 0 auto;
     padding: 20px;
     gap: 30px;
+    padding-bottom: 100px;
 }
 form {
     background-color: #d2b48c;
@@ -776,17 +779,18 @@ textarea {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        padding-bottom: 120px;
     }
     form {
         width: 90%;
         max-width: 300px;
+        margin-bottom: 20px;
     }
     input[type="submit"],
     button[type="submit"]{
         width: 80%;
     }
 }
-
 footer {
     background: linear-gradient(to right, #8b4513, #f4a460); /* Degradado marrón a dorado */
     color: #fff;
@@ -795,6 +799,8 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    left: 0;
+    z-index: 1000;
 }
 footer img {
     border-radius: 50%; /* Bordes redondeados */
@@ -803,3 +809,37 @@ footer img {
 footer img:hover {
     transform: scale(1.5); /* Aumenta el tamaño al pasar el ratón */
 }
+#btnVolverArriba {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    bottom: 80px; /* Ajustado para que no se solape con el footer */
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #704214; /* Mantiene el esquema de color de tu sitio */
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+#btnVolverArriba:hover {
+    background-color: #8b7355; /* Mismo color que tus otros hover */
+    transform: scale(1.1);
+}
+@media screen and (max-width: 768px) {
+    #btnVolverArriba {
+        bottom: 90px; /* Ajustado para móviles */
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+
