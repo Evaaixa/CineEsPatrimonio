@@ -606,6 +606,40 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */ 
     border-radius: 10px; /* Bordes redondeados */
 }
+.movie-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.movie-poster {
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.table-container {
+    width: 80%;
+    margin: 0 auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #8b7355;
+}
+th {
+    background-color: #6d4318;
+}
+tr:hover {
+    background-color: #d49138;
+}
+.movie-poster-table {
+    max-width: 100px;
+    height: auto;
+}
 
 /* enlaces externos y noticias */
 #enlaces-externos {

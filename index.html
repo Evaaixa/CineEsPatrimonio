@@ -424,21 +424,29 @@
     </div>
 </div>
 
-<h2>Mejores películas de todos los tiempos</h2>
-<p>Según la lista de la revista Rolling Stone</p>
-<div>
-    <table id="movies-table">
-        <tr>
-            <th>Nombre</th>
-            <th>Afiche</th>
-        </tr>
-        <!-- Cada fila representa una película -->
-        <tr>
-            <td><a href="#" data-movie-id="1"></a></td>
-            <td><img src="afiche1.jpg" alt="Afiche de Película 1"></td>
-        </tr>
-        
+<div class="movie-container">
+    <div>
+        <h2 id="movie-title"></h2>
+        <p id="movie-info"></p>
+        <a href="#" id="trailer-link" target="_blank">Ver Trailer</a>
+    </div>
+</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Afiche</th>
+                <th>Título</th>
+                <th>Director</th>
+                <th>Año</th>
+                <th>País</th>
+                <th>Trailer</th>
+            </tr>
+        </thead>
     </table>
+
+<div>
+    <h2>Mejores películas de todos los tiempos</h2>
+    <p>Según la lista de la revista Rolling Stone</p>
 <p>Es un tema muy subjetivo y puede variar dependiendo de las preferencias personales y las tendencias cinematográficas.
     <ol><strong>Top 10:</strong>
         <li>"The Godfather" (1972) - Francis Ford Coppola</li> 
@@ -550,7 +558,7 @@
                     <option value="colaborador">Colaborador</option>
                     <option value="usuario">Usuario</option>
                 </select<>
-                <input type="submit">Registrar
+                <input type="submit">
             </form>
         <br><br><br>
             <form id="contactForm">
@@ -572,7 +580,8 @@
         <img src="favicon.ico" alt="Logo">
     </footer>
     <button id="btnVolverArriba" title="Volver arriba">⬆️</button>
-    <script src="js/peliculas.js"></script>
+    <script src="js/videos.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/peliculas.js"></script>
 </body>
 </html>
