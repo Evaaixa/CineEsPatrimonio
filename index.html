@@ -413,7 +413,7 @@
 
 <div class="contenido-lado">
     <div class="marco">
-        <img src="img/film-frame-collection-1.jpg" alt="Marco de película" class="marco-fondo">
+        <img src="img/negativo.jpg" alt="Marco de película" class="marco-fondo">
         <div class="gif-container">
             <img src="img/Horse_animated.gif" alt="GIF animado" class="gif-animado">
         </div>
@@ -425,44 +425,54 @@
 </div>
 
 <div class="movie-container">
-    <div>
-        <h2 id="movie-title"></h2>
-        <p id="movie-info"></p>
-        <a href="#" id="trailer-link" target="_blank">Ver Trailer</a>
-    </div>
-</div>
-    <table>
-        <thead>
-            <tr>
-                <th>Afiche</th>
-                <th>Título</th>
-                <th>Director</th>
-                <th>Año</th>
-                <th>País</th>
-                <th>Trailer</th>
-            </tr>
-        </thead>
-    </table>
+
 
 <div>
-    <h2>Mejores películas de todos los tiempos</h2>
-    <p>Según la lista de la revista Rolling Stone</p>
-<p>Es un tema muy subjetivo y puede variar dependiendo de las preferencias personales y las tendencias cinematográficas.
-    <ol><strong>Top 10:</strong>
-        <li>"The Godfather" (1972) - Francis Ford Coppola</li> 
-        <!-- https://www.imdb.com/video/vi1348706585/?playlistId=tt0068646&ref_=tt_ov_vi -->
-        <li>"The Shawshank Redemption" (1994) - Frank Darabont</li>
-        <li>"The Wizard of Oz" (1939) - Victor Fleming</li>
-        <li>"The Godfather: Part II" (1974) - Francis Ford Coppola</li>
-        <li>"2001: A Space Odyssey" (1968) - Stanley Kubrick</li>
-        <li>"Tokyo Story" (1953) - Yasujirō Ozu</li>
-        <li>"The Rules of the Game" (1939) - Jean Renoir</li>
-        <li>"Singin' in the Rain" (1952) - Stanley Donen y Gene Kelly</li>
-        <li>"The Silence of the Lambs" (1991) - Jonathan Demme</li>
-        <li>"Casablanca" (1942) - Michael Curtiz</li>
-    </ol>
-</p>
-<p>Las mejores películas de habla hispana de todos los tiempos.
+    <h2>Mejores películas según la lista de la revista Rolling Stone</h2>
+    <h2>De todos los Tiempos</h2>
+    <table id="all-time-best-table">
+      <thead>
+        <tr>
+            <th>Título</th>
+            <th>Director</th>
+            <th>Año</th>
+            <th>País</th>
+            <th>Enlace</th>
+        </tr>
+      </thead>
+      <tbody id="all-time-best-tbody"></tbody>
+    </table>
+  
+    <h2>De Habla Hispana</h2>
+    <table id="hispanic-movies-table">
+      <thead>
+        <tr>
+            <th>Título</th>
+            <th>Director</th>
+            <th>Año</th>
+            <th>País</th>
+            <th>Enlace</th>
+        </tr>
+      </thead>
+      <tbody id="hispanic-movies-tbody"></tbody>
+    </table>
+  
+    <h2>Asiáticas</h2>
+    <table id="asian-movies-table">
+      <thead>
+        <tr>
+            <th>Título</th>
+            <th>Director</th>
+            <th>Año</th>
+            <th>País</th>
+            <th>Enlace</th>
+        </tr>
+      </thead>
+      <tbody id="asian-movies-tbody"></tbody>
+    </table>
+</div>
+
+<!-- <p>Las mejores películas de habla hispana de todos los tiempos.
     <ol><strong>Top 10:</strong>
         <li>"El Amor Brujo" (1960) - Francisco Rovira Beleta</li>
         <li>"La Hora de los Hornos" (1968) - Octavio Getino y Fernando Solanas</li>
@@ -489,7 +499,7 @@
         <li>"The Man Who Fell to Earth" (1976) - Nicolas Roeg (Reino Unido/Japón)</li>
         <li>" The Last Emperor" (1987) - Bernardo Bertolucci (Italia/Japón)</li>
     </ol>
-</p>
+</p> -->
 
 </div>
 <section id="enlaces-externos">
@@ -579,7 +589,6 @@
         <p>&copy; 2024 Cine como Patrimonio. Todos los derechos reservados.</p>
         <img src="favicon.ico" alt="Logo">
     </footer>
-    <button id="btnVolverArriba" title="Volver arriba">⬆️</button>
     <script src="js/videos.js"></script>
     <script src="js/script.js"></script>
     <script src="js/peliculas.js"></script>

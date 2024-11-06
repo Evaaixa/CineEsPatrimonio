@@ -1,0 +1,114 @@
+
+{
+    "all_time_best": [
+      {
+        "title": "El Padrino",
+        "director": "Francis Ford Coppola",
+        "year": 1972,
+        "country": "USA",
+        "trailer": "https://www.imdb.com/video/vi1348706585/?playlistId=tt0068646&ref_=tt_ov_vi"
+      },
+      {
+        "title": "El Mago de Oz",
+        "director": "Victor Fleming",
+        "year": 1939,
+        "country": "USA",
+        "trailer": ""
+      },
+      {
+        "title": "El Padrino, parte II",
+        "director": "Francis Ford Coppola",
+        "year": 1974,
+        "country": "USA",
+        "trailer": ""
+      },
+      {
+        "title": "2001: Odisea en el espacio",
+        "director": "Stanley Kubrick",
+        "year": 1968,
+        "country": "",
+        "trailer": ""
+      },
+      {
+        "title": "Historia de Tokyo",
+        "director": "Yasujiro Ozu",
+        "year": 1953,
+        "country": "",
+        "trailer": ""
+      }
+    ],
+    "hispanic_movies": [
+      {
+        "title": "El Padrino",
+        "director": "Francis Ford Coppola",
+        "year": 1972,
+        "country": "USA",
+        "trailer": "https://www.imdb.com/video/vi1348706585/?playlistId=tt0068646&ref_=tt_ov_vi"
+      },
+      {
+        "title": "El Mago de Oz",
+        "director": "Victor Fleming",
+        "year": 1939,
+        "country": "USA",
+        "trailer": ""
+      },
+      {
+        "title": "El Padrino, parte II",
+        "director": "Francis Ford Coppola",
+        "year": 1974,
+        "country": "USA",
+        "trailer": ""
+      },
+      {
+        "title": "2001: Odisea en el espacio",
+        "director": "Stanley Kubrick",
+        "year": 1968,
+        "country": "",
+        "trailer": ""
+      },
+      {
+        "title": "Historia de Tokyo",
+        "director": "Yasujiro Ozu",
+        "year": 1953,
+        "country": "",
+        "trailer": ""
+      }
+    ],
+    "asian_movies": [
+      {
+        "title": "El Padrino",
+        "director": "Francis Ford Coppola",
+        "year": 1972,
+        "country": "USA",
+        "trailer": "https://www.imdb.com/video/vi1348706585/?playlistId=tt0068646&ref_=tt_ov_vi"
+      },
+      {
+        "title": "El Mago de Oz",
+        "director": "Victor Fleming",
+        "year": 1939,
+        "country": "USA",
+        "trailer": ""
+      },
+      {
+        "title": "El Padrino, parte II",
+        "director": "Francis Ford Coppola",
+        "year": 1974,
+        "country": "USA",
+        "trailer": ""
+      },
+      {
+        "title": "2001: Odisea en el espacio",
+        "director": "Stanley Kubrick",
+        "year": 1968,
+        "country": "",
+        "trailer": ""
+      },
+      {
+        "title": "Historia de Tokyo",
+        "director": "Yasujiro Ozu",
+        "year": 1953,
+        "country": "",
+        "trailer": ""
+      }
+    ]
+  }

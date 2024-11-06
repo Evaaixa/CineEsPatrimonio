@@ -1,22 +1,52 @@
- // Agregar un evento de clic a las imágenes de los pósters
- const posters = document.querySelectorAll('.movie-poster-table');
- const mainPoster = document.getElementById('main-movie-poster');
- const movieTitle = document.getElementById('movie-title');
- const movieInfo = document.getElementById('movie-info');
- const trailerLink = document.getElementById('trailer-link');
+fetch('peliculas.json')
+  .then(response => response.json())
+  .then(data => {
+    const allTimeBest = data.all_time_best;
+    const hispanicMovies = data.hispanic_movies;
+    const asianMovies = data.asian_movies;
 
- posters.forEach(poster => {
-   poster.addEventListener('click', () => {
-     const title = poster.dataset.title;
-     const director = poster.dataset.director;
-     const year = poster.dataset.year;
-     const country = poster.dataset.country;
-     const trailer = poster.dataset.trailer;
+    const allTimeBestTable = document.getElementById('all-time-best-table');
+    const allTimeBestTbody = document.getElementById('all-time-best-tbody');
 
-     movieTitle.textContent = title;
-     movieInfo.textContent = `Director: ${director} | Year: ${year} | Country: ${country}`;
-     trailerLink.href = trailer;
-     mainPoster.src = poster.src;
-     mainPoster.alt = title;
-   });
- });
+    allTimeBest.forEach(movie => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${movie.title}</td>
+        <td>${movie.director}</td>
+        <td>${movie.year}</td>
+        <td>${movie.country}</td>
+        <td><a href="${movie.trailer}" target="_blank"></a></td>
+      `;
+      allTimeBestTbody.appendChild(row);
+    });
+
+    const hispanicMoviesTable = document.getElementById('hispanic-movies-table');
+    const hispanicMoviesTbody = document.getElementById('hispanic-movies-tbody');
+
+    hispanicMovies.forEach(movie => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+          <td>${movie.title}</td>
+          <td>${movie.director}</td>
+          <td>${movie.year}</td>
+          <td>${movie.country}</td>
+          <td>${movie.trailer}</td>
+      `;
+      hispanicMoviesTbody.appendChild(row);
+    });
+
+    const asianMoviesTable = document.getElementById('asian-movies-table');
+    const asianMoviesTbody = document.getElementById('asian-movies-tbody');
+
+    asianMovies.forEach(movie => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+          <td>${movie.title}</td>
+          <td>${movie.director}</td>
+          <td>${movie.year}</td>
+          <td>${movie.country}</td>
+          <td>${movie.trailer}</td>
+      `;
+      asianMoviesTbody.appendChild(row);
+    });
+  });

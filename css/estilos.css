@@ -512,8 +512,8 @@ button:hover {
     max-width: 800px;
     padding: 20px;
     text-align: center;
-    background-color: #d2b48c; /* Fondo blanco semitransparente */
-    border: 2px solid #6d4c41; /* Opcional: borde alrededor de la presentación */
+    background-color: #6d4c41; 
+    border: 2px solid #8b4513; /* Opcional: borde alrededor de la presentación */
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Opcional: sombra para darle profundidad */
     margin: 0 auto;
@@ -527,9 +527,10 @@ button:hover {
     bottom: 0;
     background: url('tu-imagen-de-fondo.jpg') no-repeat center center;
     background-size: cover;
-    opacity: 0.3; /* Ajusta la opacidad según prefieras */
-    z-index: -1; /* Coloca la imagen detrás del contenido */
-}
+    opacity: 0.3; 
+    z-index: -1; 
+} 
+
 /*  Estilos para la galería de películas*/
 /* Estilos para un video único */
 .video-gallery {
@@ -618,27 +619,20 @@ button:hover {
     margin-right: 20px;
     cursor: pointer;
 }
-.table-container {
-    width: 80%;
-    margin: 0 auto;
-}
-table {
-    width: 100%;
+#all-time-best-table, #hispanic-movies-table, #asian-movies-table {
     border-collapse: collapse;
-}
-th, td {
+    width: 100%;
+  }
+  
+#all-time-best-table th, #hispanic-movies-table th, #asian-movies-table th {
+    background-color: #8b4513;
+    border: 1px solid #6d4318;
+  }
+  
+#all-time-best-table td, #hispanic-movies-table td, #asian-movies-table td {
+    border: 1px solid #6d4318;
     padding: 10px;
-    border: 1px solid #8b7355;
-}
-th {
-    background-color: #6d4318;
-}
-tr:hover {
-    background-color: #d49138;
-}
-.movie-poster-table {
-    max-width: 100px;
-    height: auto;
+    text-align: left;
 }
 
 /* enlaces externos y noticias */
@@ -842,38 +836,6 @@ footer img {
 }
 footer img:hover {
     transform: scale(1.5); /* Aumenta el tamaño al pasar el ratón */
-}
-#btnVolverArriba {
-    display: none; /* Inicialmente oculto */
-    position: fixed;
-    bottom: 80px; /* Ajustado para que no se solape con el footer */
-    right: 20px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #704214; /* Mantiene el esquema de color de tu sitio */
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 18px;
-    width: 50px;
-    height: 50px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    transition: all 0.3s ease;
-}
-#btnVolverArriba:hover {
-    background-color: #8b7355; /* Mismo color que tus otros hover */
-    transform: scale(1.1);
-}
-@media screen and (max-width: 768px) {
-    #btnVolverArriba {
-        bottom: 90px; /* Ajustado para móviles */
-        right: 15px;
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-    }
 }
 
 

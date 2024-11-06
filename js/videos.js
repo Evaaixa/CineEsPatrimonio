@@ -37,7 +37,7 @@ const peliculas = [
         director: "Juan Padrón",
         ano: 1985,
         pais: "Cuba",
-        sinopsis: ""
+        sinopsis: "Un científico vampiro ha creado el Vampisol, una pócima revolucionaria, que permite a los vampiros pasear bajo la luz del Sol. En cuanto la noticia llega a oídos de los grandes clanes de vampiros, todos viajan a La Habana para hacerse con el control de la fórmula: los estirados y siniestros vampiros europeos, y los mafiosos vampiros norteamericanos. Pepito, un trompetista, sobrino del creador de Vampisol, será perseguido por ambos grupos desde que se le encarga la custodia de la fórmula."
     },
     {
         id: "video6",
