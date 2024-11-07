@@ -6,13 +6,15 @@
         "director": "Francis Ford Coppola",
         "year": 1972,
         "country": "USA",
-        "trailer": "https://www.imdb.com/video/vi1348706585/?playlistId=tt0068646&ref_=tt_ov_vi"
+        "poster": "carteles/ElPadrino.jpg",
+        "trailer": "https://www.youtube.com/watch?v=iOyQx7MXaz0"
       },
       {
         "title": "El Mago de Oz",
         "director": "Victor Fleming",
         "year": 1939,
         "country": "USA",
+        "poster": "img/Mago de Oz.jpg",
         "trailer": ""
       },
       {

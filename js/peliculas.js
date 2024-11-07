@@ -11,11 +11,15 @@ fetch('peliculas.json')
     allTimeBest.forEach(movie => {
       const row = document.createElement('tr');
       row.innerHTML = `
+        <td class="poster-cell">
+          <a href="${movie.trailer}" target="_blank">
+            <img src="${movie.poster}" alt="Poster de ${movie.title}">
+          </a>
+        </td>
         <td>${movie.title}</td>
         <td>${movie.director}</td>
         <td>${movie.year}</td>
         <td>${movie.country}</td>
-        <td><a href="${movie.trailer}" target="_blank"></a></td>
       `;
       allTimeBestTbody.appendChild(row);
     });
@@ -26,11 +30,15 @@ fetch('peliculas.json')
     hispanicMovies.forEach(movie => {
       const row = document.createElement('tr');
       row.innerHTML = `
+          <td class="poster-cell">
+            <a href="${movie.trailer}" target="_blank">
+              <img src="${movie.poster}" alt="Poster de ${movie.title}">
+            </a>
+          </td>
           <td>${movie.title}</td>
           <td>${movie.director}</td>
           <td>${movie.year}</td>
           <td>${movie.country}</td>
-          <td>${movie.trailer}</td>
       `;
       hispanicMoviesTbody.appendChild(row);
     });
@@ -41,11 +49,15 @@ fetch('peliculas.json')
     asianMovies.forEach(movie => {
       const row = document.createElement('tr');
       row.innerHTML = `
+          <td class="poster-cell">
+            <a href="${movie.trailer}" target="_blank">
+              <img src="${movie.poster}" alt="Poster de ${movie.title}">
+            </a>
+          </td>
           <td>${movie.title}</td>
           <td>${movie.director}</td>
           <td>${movie.year}</td>
           <td>${movie.country}</td>
-          <td>${movie.trailer}</td>
       `;
       asianMoviesTbody.appendChild(row);
     });

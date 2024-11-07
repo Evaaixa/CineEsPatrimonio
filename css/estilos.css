@@ -249,7 +249,7 @@ main::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    opacity: 0.5;
+    opacity: 0.7;
     z-index: -1;
 }
 h2, h3 {
@@ -633,6 +633,16 @@ button:hover {
     border: 1px solid #6d4318;
     padding: 10px;
     text-align: left;
+}
+.poster-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
 }
 
 /* enlaces externos y noticias */
