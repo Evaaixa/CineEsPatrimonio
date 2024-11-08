@@ -20,6 +20,7 @@ fetch('peliculas.json')
         <td>${movie.director}</td>
         <td>${movie.year}</td>
         <td>${movie.country}</td>
+        <td>${movie.comment}</td>
       `;
       allTimeBestTbody.appendChild(row);
     });

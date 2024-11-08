@@ -254,6 +254,7 @@ main::before {
 }
 h2, h3 {
     text-align: center;
+    color: #6d4318;
 }
 /* estilos para el contenedor de desplegables */
 .acordeon {
@@ -646,16 +647,16 @@ img {
 }
 
 /* enlaces externos y noticias */
-#enlaces-externos {
+.enlaces-externos {
     display: flex;
-    gap: 2rem;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    justify-content: space-between;
 }
 
-#noticias,
-#enlaces-pag {
+.enlaces-externos > div {
+    width: 48%;
+}
+
+#noticias {
     flex: 1;
     min-width: 0;
 }
@@ -710,29 +711,32 @@ img {
 .noticia a:hover {
     text-decoration: underline;
 }
-#enlaces-pag {
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     background-color: #d2b48c;
     border-radius: 8px;
     border: 2px solid #704214;
     padding: 20px;
     text-align: justify;
 }
-#enlaces-pag h2 {
+.enlaces h2 {
     color: #704214;
     margin-top: 0;
 }
-#enlaces-pag ul {
+.enlaces ul {
     list-style: none;
     padding-left: 0;
 }
-#enlaces-pag li {
+.enlaces li {
     margin-bottom: 1rem;
 }
-#enlaces-pag a {
+.enlaces a {
     color: #6d4318;
     text-decoration: none;
 }
-#enlaces-pag a:hover {
+.enlaces a:hover {
     text-decoration: underline;
 }
 @media (max-width: 768px) {

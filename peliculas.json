@@ -7,36 +7,44 @@
         "year": 1972,
         "country": "USA",
         "poster": "carteles/ElPadrino.jpg",
-        "trailer": "https://www.youtube.com/watch?v=iOyQx7MXaz0"
+        "trailer": "https://www.youtube.com/watch?v=iOyQx7MXaz0",
+        "comment": "Considerada una de las mejores películas de la historia por su impresionante narrativa, actuaciones memorables y capacidad de retratar la dinámica de una familia mafiosa."
       },
       {
-        "title": "El Mago de Oz",
-        "director": "Victor Fleming",
-        "year": 1939,
+        "title": "Ciudadano Kane",
+        "director": "Orson Welles",
+        "year": 1941,
         "country": "USA",
-        "poster": "img/Mago de Oz.jpg",
-        "trailer": ""
-      },
-      {
-        "title": "El Padrino, parte II",
-        "director": "Francis Ford Coppola",
-        "year": 1974,
-        "country": "USA",
-        "trailer": ""
+        "poster": "carteles/Citizen_Kane.jpg",
+        "trailer": "https://www.youtube.com/watch?v=gQTuCcMv-WY",
+        "comment": "Es una obra maestra del cine por su innovadora técnica cinematográfica y su compleja exploración de la vida de un magnate."
       },
       {
         "title": "2001: Odisea en el espacio",
         "director": "Stanley Kubrick",
         "year": 1968,
-        "country": "",
-        "trailer": ""
+        "country": "Reino Unido",
+        "poster": "carteles/2001_Una_odisea_del_espacio.jpg",
+        "trailer": "https://www.dailymotion.com/video/x8fzo72",
+        "comment": "Aclamada por su increíble ambición visual y narrativa, su enfoque filosófico y su influencia en el cine de ciencia ficción."
       },
       {
-        "title": "Historia de Tokyo",
-        "director": "Yasujiro Ozu",
-        "year": 1953,
-        "country": "",
-        "trailer": ""
+        "title": "La Lista de Schindler",
+        "director": "Steven Spielberg",
+        "year": 1993,
+        "country": "USA",
+        "poster": "carteles/La_lista_de_Schindler.jpg",
+        "trailer": "https://www.filmaffinity.com/es/film656153.html#",
+        "comment": "Es reconocida como una de las mejores películas históricas por su impactante retrato del Holocausto y su homenaje a la valentía humana."
+      },
+      {
+        "title": "Vértigo",
+        "director": "Alfred Hitchcock",
+        "year": 1958,
+        "country": "USA",
+        "poster": "carteles/Vertigo.jpg",
+        "trailer": "https://www.youtube.com/watch?v=RgNFajCUdM8",
+        "comment": "Considerada una obra maestra del cine por su innovadora narrativa, su maestría técnica y su profunda exploración de la obsesión y el amor."
       }
     ],
     "hispanic_movies": [
@@ -45,7 +53,7 @@
         "director": "Francis Ford Coppola",
         "year": 1972,
         "country": "USA",
-        "trailer": "https://www.imdb.com/video/vi1348706585/?playlistId=tt0068646&ref_=tt_ov_vi"
+        "trailer": ""
       },
       {
         "title": "El Mago de Oz",
@@ -82,7 +90,7 @@
         "director": "Francis Ford Coppola",
         "year": 1972,
         "country": "USA",
-        "trailer": "https://www.imdb.com/video/vi1348706585/?playlistId=tt0068646&ref_=tt_ov_vi"
+        "trailer": ""
       },
       {
         "title": "El Mago de Oz",
