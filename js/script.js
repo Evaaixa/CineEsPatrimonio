@@ -188,3 +188,23 @@ document.querySelectorAll('.carousel-button').forEach(button => {
 // Inicializar cuando el documento esté listo
 document.addEventListener('DOMContentLoaded', initCarousels); 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    
+    // Mostrar/ocultar el botón según la posición del scroll
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add('visible');
+        } else {
+            scrollToTopBtn.classList.remove('visible');
+        }
+    });
+    
+    // Función para volver arriba al hacer clic
+    scrollToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});

@@ -8,7 +8,7 @@ body {
 }
 .falling-element{
     position: absolute;
-    font-size: 2rem;
+    font-size: 3rem;
     top: -50px;
     animation: fall 3s linear infinite;
 }
@@ -224,7 +224,7 @@ nav ul li a {
 main {
     position: relative;
     min-height: 100vh;
-    padding-bottom: 60px;
+    padding-bottom: 55px;
 }
 main::before {
     content: "";
@@ -244,7 +244,6 @@ h2, h3 {
     text-align: center;
     color: #6d4318;
 }
-
 .movimiento {
     color: #daa520;
 }
@@ -505,7 +504,7 @@ button:hover {
     max-width: 800px;
     padding: 20px;
     text-align: center;
-    background-color: #6d4c41; 
+    background-color: #996515;
     border: 2px solid #8b4513; /* Opcional: borde alrededor de la presentación */
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Opcional: sombra para darle profundidad */
@@ -847,4 +846,28 @@ footer img:hover {
     transform: scale(1.5); /* Aumenta el tamaño al pasar el ratón */
 }
 
-
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+.scroll-to-top:hover {
+    background-color: #b8860b;
+    transform: translateY(-2px);
+}
+.scroll-to-top.visible {
+    display: flex;
+}
