@@ -2,94 +2,166 @@
 {
     "all_time_best": [
       {
+        "id": "El Padrino",
         "title": "El Padrino",
         "director": "Francis Ford Coppola",
         "year": 1972,
         "country": "USA",
+        "comment": "Una obra maestra que trasciende el género de gangsters para convertirse en una profunda reflexión sobre el poder, la familia y la corrupción moral.",
         "poster": "carteles/ElPadrino.jpg",
         "trailer": "https://www.youtube.com/watch?v=iOyQx7MXaz0",
-        "comment": "Impresionante narrativa, actuaciones memorables y capacidad de retratar la dinámica de una familia mafiosa."
+        "genero": "Drama",
+        "duracion":"175 min",
+        "resumen": "América, años 40. Don Vito Corleone (Marlon Brando) es el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York. Tiene cuatro hijos: Connie (Talia Shire), el impulsivo Sonny (James Caan), el pusilánime Fredo (John Cazale) y Michael (Al Pacino), que no quiere saber nada de los negocios de su padre. Cuando Corleone, en contra de los consejos de 'Il consigliere' Tom Hagen (Robert Duvall), se niega a participar en el negocio de las drogas, el jefe de otra banda ordena su asesinato. Empieza entonces una violenta y cruenta guerra entre las familias mafiosas.",
+        "analisis": "",
+        "opinion": "",
+        "foto": "imgCriticas/el_padrino.jpg", 
+        "enlace": "https://es.wikipedia.org/wiki/El_Padrino" 
       },
       {
+        "id": "2001: Odisea en el espacio",
         "title": "2001: Odisea en el espacio",
         "director": "Stanley Kubrick",
         "year": 1968,
         "country": "Reino Unido",
+        "comment": "Una película revolucionaria que redefinió las posibilidades del cine de ciencia ficción. Aclamada por su increíble ambición visual y narrativa, su enfoque filosófico",
         "poster": "carteles/2001_Una_odisea_del_espacio.jpg",
         "trailer": "https://www.dailymotion.com/video/x8fzo72",
-        "comment": "Aclamada por su increíble ambición visual y narrativa, su enfoque filosófico y su influencia en el cine de ciencia ficción."
+        "genero": "Ciencia ficción",
+        "duracion": "139 min",
+        "resumen": "La película de ciencia-ficción por excelencia de la historia del cine narra los diversos periodos de la historia de la humanidad, no sólo del pasado, sino también del futuro. Hace millones de años, antes de la aparición del hombre, unos primates descubren un monolito que los conduce a un estadio de inteligencia superior. Millones de años después, otro monolito, enterrado en una luna, despierta el interés de los científicos. Por último, durante una misión de la NASA, HAL 9000, una máquina dotada de inteligencia artificial, se encarga de controlar todos los sistemas de una nave espacial tripulada.",
+        "analisis": "",
+        "opinion": "",
+        "foto": "", 
+        "enlace": "" 
       },
       {
         "title": "Ciudad de Dios",
         "director": "Fernando Meirelles y Kátia Lund",
         "year": 2002,
         "country": "Brasil",
+        "comment": "Una explosiva representación de la vida en las favelas de Río de Janeiro que combina realismo social con un estilo visual dinámico y energético.",
         "poster": "carteles/Ciudad_de-.jpg",
         "trailer": "https://www.youtube.com/watch?v=zyzJj9lF1PU",
-        "comment": ""
+        "genero": "",
+        "duracion": "",
+        "resumen": "",
+        "analisis": "",
+        "opinion": "",
+        "foto": "", 
+        "enlace": ""
       },
       {
         "title": "El Séptimo Sello",
         "director": "Ingmar Bergman",
         "year": 1957,
         "country": "Suecia",
+        "comment": "Una obra maestra alegórica que explora los grandes temas existenciales a través de la historia de un caballero medieval que juega al ajedrez con la Muerte.",
         "poster": "carteles/Septimo_sello.jpg",
         "trailer": "https://www.youtube.com/watch?v=oxqR0gMLpnM",
-        "comment": ""
+        "genero": "",
+        "duracion": "",
+        "resumen": "",
+        "analisis": "",
+        "opinion": "",
+        "foto": "", 
+        "enlace": ""
       },
       {
         "title": "Rashomon",
         "director": "Akira Kurosawa",
         "year": 1950,
         "country": "Japón",
+        "comment": "Una innovadora exploración de la naturaleza de la verdad y la percepción humana. Al presentar un crimen desde múltiples perspectivas contradictorias, cuestiona la naturaleza misma de la realidad y la memoria.",
         "poster": "carteles/Rashomon.jpg",
         "trailer": "https://www.youtube.com/watch?v=xCZ9TguVOIA",
-        "comment": ""
+        "genero": "",
+        "duracion": "",
+        "resumen": "",
+        "analisis": "",
+        "opinion": "",
+        "foto": "", 
+        "enlace": ""
       },
       {
         "title": "Amélie",
         "director": "Jean-Pierre Jeunet",
         "year": 2001,
         "country": "Francia",
+        "comment": "La película destaca por su representación mágica de París y su protagonista excéntrica pero entrañable, que encuentra su propósito ayudando a otros de formas creativas y peculiares.",
         "poster": "carteles/Amelie.jpg",
         "trailer": "https://www.youtube.com/watch?v=w_ij-w93PDg",
-        "comment": ""
+        "genero": "",
+        "duracion": "",
+        "resumen": "",
+        "analisis": "",
+        "opinion": "",
+        "foto": "", 
+        "enlace": ""
       },
       {
         "title": "Parasite",
         "director": "Bong Joon-ho",
         "year": 2019,
         "country": "Corea del Sur",
+        "comment": "Una obra maestra contemporánea que mezcla géneros para crear una crítica social mordaz sobre la desigualdad económica. Mantiene un equilibrio perfecto entre comedia negra, drama familiar y thriller social.",
         "poster": "carteles/parasite.jpg",
         "trailer": "https://www.youtube.com/watch?v=9kLlmWPilSE",
-        "comment": ""
+        "genero": "",
+        "duracion": "",
+        "resumen": "",
+        "analisis": "",
+        "opinion": "",
+        "foto": "", 
+        "enlace": ""
       },
       {
         "title": "La Dolce Vita",
         "director": "Federico Fellini",
         "year": 1960,
         "country": "Italia",
+        "comment": "Un retrato caleidoscópico de la sociedad romana de posguerra. La película sigue a un periodista de sociedad mientras navega por el hedonismo y el vacío existencial de la alta sociedad romana.",
         "poster": "carteles/La_Dolce_Vita.jpg",
         "trailer": "https://www.youtube.com/watch?v=yP3wmfXTzjU",
-        "comment": ""
+        "genero": "",
+        "duracion": "",
+        "resumen": "",
+        "analisis": "",
+        "opinion": "",
+        "foto": "", 
+        "enlace": ""
       },
       {
         "title": "El Laberinto del Fauno",
         "director": "Guillermo del Toro",
         "year": 2006,
         "country": "México/España",
+        "comment": "Una obra maestra que entrelaza fantasía oscura con realidad histórica. Crea un cuento de hadas gótico que explora los horrores de la Guerra Civil Española a través de los ojos de una niña.",
         "poster": "carteles/Laberinto_Fauno.jpg",
         "trailer": "https://www.youtube.com/watch?v=FGzvvUBXj5M",
-        "comment": ""
+        "genero": "",
+        "duracion": "",
+        "resumen": "",
+        "analisis": "",
+        "opinion": "",
+        "foto": "", 
+        "enlace": ""
       },
       {
         "title": "La Vida es Bella",
         "director": "Roberto Benigni",
         "year": 1997,
         "country": "Italia",
+        "comment": "Una película extraordinaria que logra lo imposible: crear una historia conmovedora y parcialmente cómica sobre el Holocausto sin trivializar sus horrores.",
         "poster": "carteles/LA-VIDA-ES-BELLA.jpg",
         "trailer": "https://www.youtube.com/watch?v=Mp2soYe7jZI",
-        "comment": ""
+        "genero": "",
+        "duracion": "",
+        "resumen": "",
+        "analisis": "",
+        "opinion": "",
+        "foto": "", 
+        "enlace": ""
       }
     ]
   }

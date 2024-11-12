@@ -618,6 +618,8 @@ button:hover {
 .mejor_pelicula {
     text-align: center;
     color: #6d4318;
+    width: 80%;
+    margin: 0 auto;
 }
 .movie-container {
     display: flex;

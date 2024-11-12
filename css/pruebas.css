@@ -1,0 +1,50 @@
+/* #87CEEB (Sky Blue)
+
+#2C3E50 (Midnight Blue)
+
+#8B4513 (Saddle Brown)
+
+#5DADE2 (Medium Blue)
+
+#A0522D (Sienna) */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F0F0; /* Fondo neutro */
+    color: #333;
+}
+
+header {
+    background-color: #2C3E50; /* Azul Oscuro */
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #c97031d5; /* Marrón Oscuro */
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFF;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    background-color: #a9cddb; /* Azul Claro */
+    padding: 20px;
+}
+
+footer {
+    background-color: #2C3E50; /* Marrón Claro */
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+

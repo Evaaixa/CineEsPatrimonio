@@ -337,15 +337,15 @@
             <div class="carousel">
                 <div class="carousel-container" id="carousel-right">
                     <div class="carousel-slide">
-                        <img src="img/maq-edicion.png" alt="Imagen 1"></div>
+                        <img src="" alt="Imagen 1"></div>
                     <div class="carousel-slide">
-                        <img src="img/Afiche-3.jpg" alt="Imagen 2"></div>
+                        <img src="" alt="Imagen 2"></div>
                     <div class="carousel-slide">
-                        <img src="img/Proyector-1.jpeg" alt="Imagen 3"></div>
+                        <img src="" alt="Imagen 3"></div>
                     <div class="carousel-slide">
-                        <img src="img/Moviola.jpeg" alt="Imagen 3"></div>
+                        <img src="" alt="Imagen 4"></div>
                     <div class="carousel-slide">
-                        <img src="img/Arch-analog.jpg" alt="Imagen 3"></div>
+                        <img src="" alt="Imagen 5"></div>
                 </div>
                 <button class="carousel-button prev" onclick="moveSlide('carousel-right', -1)">&#10094;</button>
                 <button class="carousel-button next" onclick="moveSlide('carousel-right', 1)">&#10095;</button>
@@ -370,16 +370,16 @@
 
 <!-- Opción 2: Galería de videos -->
     <div class="video-gallery" id="videos">
-        <h3>Cine Interactivo</h3>
-        <p>Selecciona un afiche/póster para ver la información de la película y reproducir el video</p>
+        <h2>Cine Interactivo</h2>
+        <h3>Selecciona un afiche/póster para ver la información de la película y reproducir el video</h3>
         <div class="carteles">
             <img src="carteles/A is for Atom.jpg" alt="A es para átomo" class="cartel" onclick="mostrarVideo ('video1')">
             <img src="carteles/A_Star_Is_Born.jpg" alt="Ha nacido una estrella" class="cartel" onclick="mostrarVideo('video2')">
             <img src="carteles/How animated cartoons are made.jpg" alt="¿Cómo se hacen los dibujos animados?" class="cartel" onclick="mostrarVideo('video3')">
             <img src="carteles/I_Wanna_Be_a_Sailor.jpg" alt="Quiero ser marinero" class="cartel" onclick="mostrarVideo('video4')">
-            <img src="carteles/vampires-in-havana.jpg" alt="Vampiros en La Habana" class="cartel" onclick="mostrarVideo('video4')">
-            <img src="carteles/Life_with_Father.jpg" alt="Vida con papá" class="cartel" onclick="mostrarVideo('video5')">
-            <img src="carteles/It's_a_Wonderful_Life.jpeg" alt="Que bello es vivir" class="cartel" onclick="mostrarVideo('video6')">
+            <img src="carteles/vampires-in-havana.jpg" alt="Vampiros en La Habana" class="cartel" onclick="mostrarVideo('video5')">
+            <img src="carteles/Life_with_Father.jpg" alt="Vida con papá" class="cartel" onclick="mostrarVideo('video6')">
+            <img src="carteles/It's_a_Wonderful_Life.jpeg" alt="Que bello es vivir" class="cartel" onclick="mostrarVideo('video7')">
         </div>
         <div class="video-container">
             <h3>Dominio Público</h3>
@@ -441,8 +441,9 @@
 
 <div class="mejor_pelicula">
     <h2>¿Cuál es la mejor película de la historia?</h2>
-    <p>Tras más de un siglo de vida del séptimo arte, responder a la pregunta "¿Cuál es la mejor película de la historia del cine?" es casi imposible. Es una tarea subjetiva, existen ciertos filmes que son ampliamente reconocidos y aclamados a nivel mundial como obras maestras del séptimo arte. Estas son, entre muchas, las 10 películas seleccionadas de todos los tiempos:</p>
-    
+    <p>Tras más de un siglo de vida del séptimo arte, responder a la pregunta "¿Cuál es la mejor película de la historia del cine?" es casi imposible. Es una tarea subjetiva, existen ciertos filmes que son ampliamente reconocidos y aclamados a nivel mundial como obras maestras del séptimo arte. Hemos seleccionado diez (10) películas que representan algunos de los mayores logros en la historia del cine, aportando innovaciones técnicas y narrativas que siguen influyendo en el cine Contemporáneo. <br>
+    Más allá de sus méritos técnicos, son obras que abordan temas universales de la condición humana, desde la moralidad y el poder hasta la verdad y la existencia misma. Cada una demuestra cómo el cine puede trascender el mero entretenimiento para convertirse en una poderosa herramienta de reflexión social y exploración emocional.</p>    
+</div>
     <div class="movie-container">
         <table id="all-time-best-table">
             <thead>
@@ -458,7 +459,6 @@
             <tbody id="all-time-best-tbody"></tbody>
         </table>
     </div>
-</div>
 <section class="enlaces-externos">
     <div id="noticias">
         <h2>Noticias</h2>
@@ -536,9 +536,10 @@
     </div>
 </section>
 <br><br>
+    <h2>Formularios</h2>
     <section id="formularios">
             <form id="registrationForm" action="procesos.php" method="POST">
-                <h3>Formulario de acceso</h3>
+                <h3>Formulario de registro</h3>
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Correo Electrónico:</label>
@@ -576,6 +577,7 @@
     <script src="js/videos.js"></script>
     <script src="js/script.js"></script>
     <script src="js/peliculas.js"></script>
+    <script src="js/chaplin.js"></script>
     <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Volver arriba">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>

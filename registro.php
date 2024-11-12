@@ -1,5 +1,12 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    echo "Datos recibidos:<br>"; 
+    echo "Nombre: " . $_POST['name'] . "<br>"; 
+    echo "Email: " . $_POST['email'] . "<br>"; 
+    echo "Ciudad: " . $_POST['ciudad'] . "<br>"; 
+    echo "País: " . $_POST['pais'] . "<br>"; 
+    echo "Rol: " . $_POST['role'] . "<br>";
+    
     $name = $_POST['name'];
     $email = $_POST['email'];
     $ciudad = $_POST['ciudad'];
@@ -11,4 +18,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     echo "Registro completado con éxito.";
 }
+
 

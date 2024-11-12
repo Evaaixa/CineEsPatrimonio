@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Críticas Cinematográficas</title>
+    <link rel="stylesheet" href="css/criticasCinem.css">
+    <!-- <link rel="stylesheet" href="css/pruebas.css"> -->
+    <script> 
+        function mostrarCritica() { 
+            const params = new URLSearchParams(window.location.search); 
+            const peliculaId = params.get('pelicula'); 
+            
+            fetch('peliculas.json') 
+                .then(response => response.json()) 
+                .then(data => { 
+                    const pelicula = data.all_time_best.find(p => p.id === peliculaId); 
+                    
+                    if (pelicula) { 
+                        document.getElementById('titulo').innerText = "Título: " + pelicula.title; 
+                        document.getElementById('director').innerText = "Director: " + pelicula.director; 
+                        document.getElementById('genero').innerText = "Género: " + pelicula.genero; 
+                        document.getElementById('duracion').innerText = "Duración: " + pelicula.duracion; 
+                        document.getElementById('resumen').innerText = "Resumen: " + pelicula.resumen; 
+                        document.getElementById('analisis').innerText = "Análisis: " + pelicula.analisis; 
+                        document.getElementById('opinion').innerText = "Opinión Personal: " + pelicula.opinion;
+                        document.getElementById('foto').src = pelicula.foto;
+                        document.getElementById('trailer').src = pelicula.trailer;
+                        document.getElementById('enlace').innerText = "Más información sobre esta película";
+                    } else { 
+                        document.getElementById('contenido').innerText = "No se encontró la crítica para esta película."; 
+                    } 
+                }) 
+                .catch(error => console.error('Error al cargar el archivo JSON:', error)); 
+            } 
+            
+            window.onload = mostrarCritica; 
+    </script>
+</head>
+<body>
+    <header> 
+        <div class="banner">
+            <div class="title">Hablemos de Cine</div>
+        </div>
+        <div class="falling-element element1">🎥</div>
+        <div class="falling-element element2">🎬</div>
+        <div class="falling-element element3">🎞️</div>
+        <div class="falling-element element4">📹</div>
+        <div class="falling-element element5">📽</div>
+        <nav> 
+            <ul> 
+                <li><a href="index.html">Inicio</a></li> 
+                <li><a href="criticas.html">Críticas</a></li> 
+                <li><a href="contacto.html">Contacto</a></li> 
+                <li><a href="blog.html">Blog</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+    <main> 
+        <section id="contenido" class="reviews">
+            <img id="foto" alt="Foto de la Película" class="poster">
+            <article class="review">
+                <h2 id="titulo">Título de la Película</h2> 
+                <p id="director"><strong>Director:</strong></p> 
+                <p id="genero"><strong>Género:</strong></p> 
+                <p id="duracion"><strong>Duración:</strong></p> 
+                <p id="resumen"><strong>Resumen:</strong></p> 
+                <p id="analisis"><strong>Análisis:</strong></p> 
+                <p id="opinion"><strong>Opinión Personal:</strong></p>
+            </article> 
+            <iframe id="trailer" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h3>Datos técnicos</h3>
+            <ul>
+                <li><strong>Duración:</strong> 175 minutos</li>
+                <li><strong>Presupuesto:</strong> $6.000.000</li>
+                <li><strong>Recaudación:</strong> $245.066.411</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Opiniones de los Usuarios</h3>
+            <div id="comentarios">
+                <!-- Sección de comentarios -->
+            </div>
+            <form id="comentario-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" required></textarea>
+                <button type="submit">Enviar Comentario</button>
+            </form>
+        </section>
+
+        <section>
+            <p>Comparte esta crítica:</p>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tu_pagina.com/critica.html" target="_blank">Compartir en Facebook</a> 
+            <a href="https://twitter.com/intent/tweet?url=https://tu_pagina.com/critica.html&text=Check%20out%20this%20movie%20review!" target="_blank">Compartir en Twitter</a>
+        </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </main> 
+    
+    
+    
+    
+    
+    
+    <footer> 
+        <p>&copy; 2024 Cine como Patrimonio. Todos los derechos reservados.</p>
+        <img src="favicon.ico" alt="Logo">
+    </footer>
+
+
+</body>
+</html>

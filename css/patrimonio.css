@@ -123,6 +123,28 @@ header{
         transform: translateY(-20px);
     }
 }
+/* barra para los enlaces a las redes sociales */
+.sidebar {
+    position: fixed;
+    top: 20%;
+    right: 5px;
+    background-color: #d49138;
+    padding: 3px;
+    border: 2px solid #704214;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+  .social-icons {
+    list-style: none;
+    padding: 0;
+}
+  .social-icons li {
+    margin-bottom: 10px;
+}
+  .social-icons a {
+    color: #faf6f1;
+    font-size: 24px;
+}
 main {
     position: relative;
     min-height: 100vh;
