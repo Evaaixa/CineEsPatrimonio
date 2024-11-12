@@ -184,7 +184,8 @@ document.querySelectorAll('.carousel-button').forEach(button => {
         stopAutoplay(carouselId);
     });
 });
-
+  
+  
 // Inicializar cuando el documento esté listo
 document.addEventListener('DOMContentLoaded', initCarousels); 
 
@@ -208,3 +209,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
