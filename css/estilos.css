@@ -617,11 +617,23 @@ button:hover {
     border-radius: 10px; /* Bordes redondeados */
 }
 /* Tabla de mejores películas */
+.tabla {
+    background-image: url(../carteles/afiches_peliculas.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 8px;
+}
 .mejor_pelicula {
     text-align: center;
-    color: #6d4318;
     width: 80%;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 3px;
+    font-size: 15px;
+    border-radius: 8px;
 }
 .movie-container {
     display: flex;
@@ -637,8 +649,10 @@ button:hover {
 }
 #all-time-best-table {
     border-collapse: collapse;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 #all-time-best-table th {
     background-color: #8b4513;
@@ -650,8 +664,7 @@ button:hover {
     padding: 10px;
     text-align: left;
     border: 1px solid #6d4318;
-    color: #ddd;
-    font-size: small;
+    font-size: 14px;
 }
 .poster-cell {
     display: flex;

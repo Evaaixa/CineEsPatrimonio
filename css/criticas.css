@@ -1,32 +1,4 @@
 
-/* Azul Claro y Marrón Claro
-
-color: #87CEEB;  (Sky Blue)
-
-Marrón Claro: #D2B48C (Tan)
-
-Azul Oscuro y Marrón Oscuro
-
-Azul Oscuro: #2C3E50 (Midnight Blue)
-
-Marrón Oscuro: #8B4513 (Saddle Brown)
-
-Azul Medio y Marrón Medio
-
-Azul Medio: #5DADE2 (Medium Blue)
-
-Marrón Medio: #A0522D (Sienna) 
-
-Azul Marino: #1E3A8A (Navy Blue)
-
-Marrón Chocolate: #D2691E (Chocolate)
-
-*/
-
-
-/* Estilos básicos */
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -135,8 +107,6 @@ main {
     padding: 20px;
 }
 
-
-
 .reviews {
     margin: 20px 0;
 }
@@ -151,6 +121,43 @@ main {
 
 .review h2 {
     margin-top: 0;
+}
+.galeria-fotos {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.fotos-adicionales {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+.foto-adicional {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.foto-adicional:hover {
+    transform: scale(1.1);
+}
+.enlaces-externos {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+.boton-enlace {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8b4513;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.boton-enlace:hover {
+    background-color: #6d4318;
 }
 
 /* estilos para los formularios */
