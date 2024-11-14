@@ -1,16 +1,20 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
-
+p {
+    line-height: 1.5;
+}
 header {
     text-align: center;
     background-color: #333;
     color: white;
     padding: 20px 0;
 }
+
 .falling-element{
     position: absolute;
     font-size: 3rem;
@@ -47,28 +51,7 @@ header {
     50% { transform: translateX(50%) translateY(0);}
     75% { transform: translateX(75%) translateY(20px);}
 }
-/* barra para los enlaces a las redes sociales */
-.sidebar {
-    position: fixed;
-    top: 20%;
-    right: 5px;
-    background-color: #d49138;
-    padding: 3px;
-    border: 2px solid #704214;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-}
-  .social-icons {
-    list-style: none;
-    padding: 0;
-}
-  .social-icons li {
-    margin-bottom: 10px;
-}
-  .social-icons a {
-    color: #faf6f1;
-    font-size: 24px;
-}
+
 main {
     position: relative;
     min-height: 100vh;
@@ -92,39 +75,38 @@ nav ul {
     list-style: none;
     padding: 0;
 }
-
 nav ul li {
     display: inline;
     margin: 0 10px;
 }
-
 nav ul li a {
     color: white;
     text-decoration: none;
 }
-
-main {
-    padding: 20px;
-}
-
+/* Ajustes para el desplegable de las críticas y créditos de las mejores películas */
 .reviews {
     margin: 20px 0;
 }
-
 .review {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    background-color: "";
+    border: 1px solid #0a1d2f;
+    border-radius: 8px;
     padding: 20px;
     margin: 20px 0;
 }
-
 .review h2 {
     margin-top: 0;
 }
-.galeria-fotos {
-    width: 100%;
-    margin-bottom: 20px;
+#contenido.reviews {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.galeria-fotos .poster {
+    width: 75%;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .fotos-adicionales {
     display: flex;
@@ -134,7 +116,7 @@ main {
 }
 .foto-adicional {
     width: 150px;
-    height: 100px;
+    height: auto;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -150,14 +132,14 @@ main {
 .boton-enlace {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #8b4513;
+    background-color: #2C3E50;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 .boton-enlace:hover {
-    background-color: #6d4318;
+    background-color: #b862b8;
 }
 
 /* estilos para los formularios */
@@ -207,7 +189,7 @@ textarea {
 }
 input[type="submit"],
 button[type="submit"] {
-    background-color: #704214;
+    background-color: #2C3E50;
     color: white;
     padding: 8px 12px;
     border: none;
@@ -220,7 +202,7 @@ button[type="submit"] {
 }
 input[type="submit"]:hover,
 button[type="submit"]:hover {
-    background-color: #8b7355;
+    background-color: #b862b8;
 }
 textarea {
     height: 80px;

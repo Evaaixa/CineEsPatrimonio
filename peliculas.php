@@ -3,49 +3,45 @@
 $servername = "localhost";
 $username = "root@localhost";
 $password = "";
-$dbname = "mejorespel_db";
+$dbname = "cine_db";
 
+// Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
+
+// verificar conexión
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+  die("Conexión fallida: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM movies LIMIT 1";
-$result = $conn->query($sql);
+// Leer el archivo JSON
+$json_data = file_get_contents('../peliculas.json');
+$peliculas = json_decode($json_data, true);
 
-if ($result->num_rows > 0) {
-  $row = $result->fetch_assoc();
-  echo "<img src='" . $row["poster"] . "' alt='" . $row["title"] . "' class='movie-poster' id='main-movie-poster'>";
-} else {
-  echo "<p>No movies found.</p>";
-}
-
-$conn->close();
-
-// Obtener todos los datos de las películas
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "SELECT * FROM movies";
-$result = $conn->query($sql);
-$i = 1; // Índice para generar un ID único
-
-if ($result->num_rows > 0) {
-  while($row = $result->fetch_assoc()) {
-    echo "<tr>";
-    echo "<td><img src='" . $row["poster"] . "' alt='" . $row["title"] . "' class='movie-poster-table' id='movie-poster-" . $i . "' data-title='" . $row["title"] . "' data-director='" . $row["director"] . "' data-year='" . $row["year"] . "' data-country='" . $row["country"] . "' data-trailer='" . $row["trailerLink"] . "'></td>";
-    echo "<td>" . $row["title"] . "</td>";
-    echo "<td>" . $row["director"] . "</td>";
-    echo "<td>" . $row["year"] . "</td>";
-    echo "<td>" . $row["country"] . "</td>";
-    echo "<td><a href='" . $row["trailerLink"] . "' target='_blank'>Watch Trailer</a></td>";
-    echo "</tr>";
-    $i++;
-  }
-} else {
-  echo "<tr><td colspan='6'>No movies found.</td></tr>";
-}
-
+// Preparar y ejecutar la inserción de datos 
+foreach ($peliculas['all_time_best'] as $pelicula) { 
+  $titulo = $pelicula['title']; 
+  $director = $pelicula['director']; 
+  $ano = $pelicula['year']; 
+  $pais = $pelicula['country']; 
+  $comentario = $pelicula['comment']; 
+  $poster = $pelicula['poster']; 
+  $trailer = $pelicula['trailer']; 
+  $genero = $pelicula['genero']; 
+  $duracion = $pelicula['duracion']; 
+  $resumen = $pelicula['resumen']; 
+  $analisis = $pelicula['analisis']; 
+  $opinion = $pelicula['opinion']; 
+  $foto = $pelicula['foto']; 
+  $fotos_adicionales = json_encode($pelicula['fotos_adicionales']); 
+  $enlace_externo = $pelicula['enlace_externo']; 
+  
+  $sql = "INSERT INTO peliculas (titulo, director, ano, pais, comentario, poster, trailer, genero, duracion, resumen, analisis, opinion, foto, fotos_adicionales, enlace_externo) VALUES ('$titulo', '$director', $ano, '$pais', '$comentario', '$poster', '$trailer', '$genero', '$duracion', '$resumen', '$analisis', '$opinion', '$foto', '$fotos_adicionales', '$enlace_externo')"; 
+  
+  if ($conn->query($sql) === TRUE) { 
+    echo "Registro insertado correctamente: " . $titulo . "<br>"; 
+  } else { 
+    echo "Error insertando el registro: " . $conn->error . "<br>"; 
+  } 
+} 
+// Cerrar conexión 
 $conn->close();

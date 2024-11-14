@@ -10,7 +10,7 @@
 <body>
     <header> 
         <div class="banner">
-            <div class="title">Hablemos de Cine</div>
+            <h1 class="title-banner">Un poco más de Cine</h1>
         </div>
         <div class="falling-element element1">🎥</div>
         <div class="falling-element element2">🎬</div>
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <article class="review">
-                    <h2 id="titulo">Título de la Película</h2> 
+                    <h2 id="titulo">${data.title}</h2> 
                     <p id="director"><strong>Director:</strong></p> 
                     <p id="genero"><strong>Género:</strong></p> 
                     <p id="duracion"><strong>Duración:</strong></p> 
@@ -100,6 +100,10 @@
         <img src="favicon.ico" alt="Logo">
     </footer>
     <script src="js/criticas.js"></script>
-
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Volver arriba">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
 </body>
 </html>

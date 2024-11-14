@@ -8,104 +8,55 @@
 
 </head>
 <body>
-
-
-    <div class="container mx-auto my-8">
-        <h1 class="text-3xl font-bold mb-4">Clasificación de Películas</h1>
-    
-        <nav class="mb-6">
-          <ul class="flex space-x-4">
-            <li><a href="#" class="nav-link" data-category="hispano">Habla Hispana</a></li>
-            <li><a href="#" class="nav-link" data-category="asian">Asiáticas</a></li>
-            <li><a href="#" class="nav-link" data-category="hindi">Cine Hindú</a></li>
-            <li><a href="#" class="nav-link" data-category="all-time">Todos los Tiempos</a></li>
-            <li><a href="#" class="nav-link" data-category="documentary">Documentales</a></li>
-            <li><a href="#" class="nav-link" data-category="animation">Animación</a></li>
-          </ul>
-        </nav>
-    
-        <div id="film-content">
-            <h3>Habla Hispana</h3>
-            <table id="hispanic-movies-table">
-              <thead>
-                <tr>
-                    <th>Título</th>
-                    <th>Director</th>
-                    <th>Año</th>
-                    <th>País</th>
-                    <th>Enlace</th>
-                </tr>
-              </thead>
-              <tbody id="hispanic-movies-tbody"></tbody>
-            </table>
-            <h3>Asiáticas</h3>
-            <table id="asian-movies-table">
-              <thead>
-                <tr>
-                    <th>Título</th>
-                    <th>Director</th>
-                    <th>Año</th>
-                    <th>País</th>
-                    <th>Enlace</th>
-                </tr>
-              </thead>
-              <tbody id="asian-movies-tbody"></tbody>
-            </table>
-            <h3>Cine Hindú</h3>
-            <table id="hindi-movies-table">
-              <thead>
-                <tr>
-                    <th>Título</th>
-                    <th>Director</th>
-                    <th>Año</th>
-                    <th>País</th>
-                    <th>Enlace</th>
-                </tr>
-              </thead>
-              <tbody id="hindi-movies-tbody"></tbody>
-            </table>
-            <h3>Todos los tiempos</h3>
-            <table id="all-time-movies-table">
-              <thead>
-                <tr>
-                    <th>Título</th>
-                    <th>Director</th>
-                    <th>Año</th>
-                    <th>País</th>
-                    <th>Enlace</th>
-                </tr>
-              </thead>
-              <tbody id="all-time-movies-tbody"></tbody>
-            </table>
-            <h3>Documentales</h3>
-            <table id="documentary-movies-table">
-              <thead>
-                <tr>
-                    <th>Título</th>
-                    <th>Director</th>
-                    <th>Año</th>
-                    <th>País</th>
-                    <th>Enlace</th>
-                </tr>
-              </thead>
-              <tbody id="documentary-movies-tbody"></tbody>
-            </table>
-            <h3>Animación</h3>
-            <table id="animation-movies-table">
-              <thead>
-                <tr>
-                    <th>Título</th>
-                    <th>Director</th>
-                    <th>Año</th>
-                    <th>País</th>
-                    <th>Enlace</th>
-                </tr>
-              </thead>
-              <tbody id="animation-movies-tbody"></tbody>
-            </table>
-        </div>
-      </div>
-
-<script></script>
+  <div class="movie-container"> 
+    <table id="all-time-best-table">
+      <thead> 
+        <tr> 
+          <th>Poster</th> 
+          <th>Título</th> 
+          <th>Director</th> 
+          <th>Año</th> 
+          <th>País</th> 
+          <th>Comentarios</th> 
+        </tr> 
+      </thead> 
+      <tbody> 
+        <?php 
+        $servername = "localhost"; 
+        $username = "root@localhost";
+        $password = "";
+        $dbname = "cine_db";
+        // Crear conexión 
+        $conn = new mysqli($servername, $username, $password, $dbname); 
+        
+        // Verificar conexión 
+        if ($conn->connect_error) { 
+          die("Conexión fallida: " . $conn->connect_error); 
+        } 
+        
+        // Obtener datos 
+        $sql = "SELECT * FROM peliculas"; 
+        $result = $conn->query($sql); 
+        
+        if ($result->num_rows > 0) { 
+          while($row = $result->fetch_assoc()) { 
+            echo "<tr>"; 
+            echo "<td class='poster-cell'><img src="" . $row [""] . '" alt='Poster de " . $row['titulo'] . "'></td>"; echo "<td><a href='criticas.html?pelicula="" . $row ['id'] . "'>" . $row['titulo'] . "</a></td>"; 
+            echo "<td>" . $row['director'] . "</td>"; 
+            echo "<td>" . $row['ano'] . "</td>"; 
+            echo "<td>" . $row['pais'] . "</td>"; 
+            echo "<td>" . $row['comentario'] . "</td>"; 
+            echo "</tr>"; 
+          } 
+        } else { 
+          echo "<tr><td colspan='6'>No hay películas disponibles</td></tr>"; 
+        } 
+        
+        // Cerrar conexión 
+        $conn->close(); 
+        ?> 
+      </tbody> 
+    </table> 
+  </div>
 </body>
 </html>

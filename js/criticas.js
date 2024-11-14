@@ -1,4 +1,5 @@
 
+
 function mostrarCritica() { 
     const params = new URLSearchParams(window.location.search); 
     const peliculaId = params.get('pelicula'); 
@@ -11,8 +12,8 @@ function mostrarCritica() {
             if (pelicula) { 
                 document.getElementById('titulo').innerText = "Título: " + pelicula.title; 
                 document.getElementById('director').innerText = "Director: " + pelicula.director; 
-                console.log("Película encontrada:", pelicula);
-                console.log("Fotos adicionales:", pelicula.fotos_adicionales);
+                // console.log("Película encontrada:", pelicula);
+                // console.log("Fotos adicionales:", pelicula.fotos_adicionales);
                 document.getElementById('genero').innerText = "Género: " + pelicula.genero; 
                 document.getElementById('duracion').innerText = "Duración: " + pelicula.duracion; 
                 document.getElementById('resumen').innerText = "Resumen: " + pelicula.resumen; 
@@ -52,3 +53,4 @@ function mostrarCritica() {
     } 
     
     window.onload = mostrarCritica; 
+
