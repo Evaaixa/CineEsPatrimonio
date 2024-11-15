@@ -83,6 +83,28 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+/* barra para los enlaces a las redes sociales */
+.sidebar {
+    position: fixed;
+    top: 40%;
+    right: 5px;
+    background-color: #2C3E50;
+    padding: 3px;
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+  .social-icons {
+    list-style: none;
+    padding: 0;
+}
+  .social-icons li {
+    margin-bottom: 10px;
+}
+  .social-icons a {
+    color: #aee2d9;
+    font-size: 24px;
+}
 /* Ajustes para el desplegable de las críticas y créditos de las mejores películas */
 .reviews {
     margin: 20px 0;

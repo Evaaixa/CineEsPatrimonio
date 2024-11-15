@@ -40,8 +40,8 @@
                     <a href="javascript:void(0)" class="dropbtn">Enlaces</a>
                     <div class="dropdown-content">
                         <a href="#noticias" target="_blank">Noticias</a> 
-                        <a href="#enlaces-pag-peliculas" target="_blank">Páginas de Cine
-                        <a href="#enlaces-revistas" target="_blank">Páginas de Revistas
+                        <a href="#enlaces-pag-peliculas" target="_blank">Cine para descargar
+                        <a href="#enlaces-revistas" target="_blank">Revistas de Cine
                         <a href="criticas.html" target="_blank">Críticas de Cine
                     </div>
                 </li>
@@ -49,8 +49,8 @@
             </ul>
         </nav>
     </header>
-
-    <main>
+<div class="page-container">
+    <main class="main-content">
         <section id="intro">
             <div id="chaplin-container">
                 <h1 class="titulo-3d">Bienvenidos</h1>
@@ -314,7 +314,7 @@
             <div class="carousel">
                 <div class="carousel-container" id="carousel-center">
                     <div class="carousel-slide">
-                        <img src="img/Chaplin_1-2.jpg" alt="Imagen 1">
+                        <img src="img/Chaplin_1.jpg" alt="Imagen 1">
                         <div class="caption" style="font-size: 12px"><em>"La vida es maravillosa si no se le tiene miedo"</em></div>
                     </div>
                     <div class="carousel-slide">
@@ -326,12 +326,20 @@
                         <div class="caption" style="font-size: 12px"><em>“Nunca te olvides de sonreír, porque el día que no sonrías será un día perdido”</em></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="img/Chaplin_5.jpg" alt="Imagen 3">
+                        <img src="img/Chaplin_5.jpg" alt="Imagen 4">
                         <div class="caption" style="font-size: 12px"><em>“Algo hay tan inevitable como la muerte y es la vida”</em></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="img/Chaplin_6.jpg" alt="Imagen 3">
+                        <img src="img/Chaplin_6.jpg" alt="Imagen 5">
                         <div class="caption" style="font-size: 12px"><em>“El tiempo es el mejor autor: siempre encuentra un final perfecto”</em></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/Chaplin_7.jpg" alt="Imagen 6">
+                        <div class="caption" style="font-size: 12px"><em>“A fin de cuentas, todo es un chiste”</em></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/Chaplin_8.jpg" alt="Imagen 7">
+                        <div class="caption" style="font-size: 12px"><em>“A la luz de nuestros egos, todos somos monarcas destronados”</em></div>
                     </div>
                 </div>
                 <button class="carousel-button prev" onclick="moveSlide('carousel-center', -1)">&#10094;</button>
@@ -348,12 +356,12 @@
             <div class="carousel">
                 <div class="carousel-container" id="carousel-right">
                     <div class="carousel-slide">
-                        <img src="img/ProyecSuper8-1.jpg" alt="Imagen 1">
-                        <div class="caption">Proyector Super8 mm</div>
+                        <img src="img/maq-edicion.png" alt="Imagen 1">
+                        <div class="caption">Máquina de edición</div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="img/proyec16.jpg" alt="Imagen 2">
-                        <div class="caption">Proyector 16 mm</div>
+                        <img src="img/Camaras2.png" alt="Imagen 2">
+                        <div class="caption">Cámara y Proyectores</div>
                     </div>
                     <div class="carousel-slide">
                         <img src="img/Proyector.jpeg" alt="Imagen 3">
@@ -380,11 +388,14 @@
 <br>
 <section id="patrimonio">
     <h2>Patrimonio Fílmico</h2>
+    <div class="mejor_pelicula">
+    <h2>Caracas 1935 (Venezuela)</h2>
+    <p> Esta película originalmente en Blanco y Negro y sin audio fue ubicada en la pagina web de la Universidad de Pennsilvania, haciendo uso de las nuevas herramientas digitales "IA o Inteligencia Artificial" se hizo la colorización así como agregaron una pista de audio acorde con las distintas escenas que se ven en ella, es de mencionar que no son los colores y audio reales que se verían al momento de esta filmación, solo quisieron crear un ambiente imaginario de cómo se hubieran visto estos lugares de Caracas en aquellos años. Debido a la baja resolución de la película original se ha tratado de llevar a una resolución más alta (Alta Definición 4K,1080p,720p) a fin de que pueda visualizarse en mayor tamaño con la menor perdida de calidad.</p>
+    </div>
 <!-- Opción 1: Video único -->
     <div class="video-container">
         <video controls width="100%">
-        <h3>Caracas 1935 (Venezuela)</h3>
-        <source src="" type="video/mp4">
+        <source src="videos/Caracas,_Venezuela(1935).webm" type="video/mp4">
         Tu navegador no soporta el elemento de video.
         </video>
     </div>
@@ -434,7 +445,7 @@
         </div>
         <div class="video-wrapper" id="video5">
             <video controls>
-                <source src="" type="video/mp4">
+                <source src="videos/Vampiros_en_La_Habana_(Muñequitos_Cubanos).webm.360p.webm" type="video/mp4">
                 Tu navegador no soporta el elemento de video.
             </video>
             <button class="close-btn" onclick="cerrarVideo('video5')">&times;</button>
@@ -480,118 +491,118 @@
             <tbody id="all-time-best-tbody"></tbody>
         </table>
     </div>
-</section>
-<section class="enlaces-externos">
-    <div id="noticias">
+</section>     
+    <br><br>
+    <h2>Formularios</h2>
+    <section id="formularios">
+        <form id="registrationForm" action="procesos.php" method="POST">
+            <h3>Formulario de registro</h3>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>            
+            <label for="role">Rol:</label>
+            <select id="role" name="role" required>
+                <option value="colaborador">Colaborador</option>
+                <option value="usuario">Usuario</option>
+            </select<>
+            <input type="submit">
+        </form>
+        <br><br><br>
+        <form id="contactForm">
+            <h3>Contacto</h3>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="tel" name="tel" required>                
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
+
+<aside class="sidebar1">
+    <!-- Sección de noticias -->
+    <section id="noticias" class="sidebar-section">
         <h2>Noticias</h2>
         <div class="noticia">
-                <img src="img/descarga.jpg" class="noticia-img" alt="Noticia 1">
+            <img src="img/descarga.jpg" class="noticia-img" alt="Noticia 1">
             <div class="contenido">
                 <h4>Vuelve la 17ª edición del PRIMER FESTIVAL DE CINE que se celebra del 9 al 24 de noviembre de 2024.</h4>
                 <p>Una iniciativa perfecta para acercar a los más pequeños a disfrutar del cine, con opciones para todas las edades, como son las propuestas de cortometrajes un plan perfecto para la franja comprendida entre los 3-5 años en las que la duración de un filme convencional puede ser demasiado larga para ellos.<a href=https://www.nuevatribuna.es/articulo/cultura---ocio/vuelve-primer-festival-cine-9-24-noviembre-2024/20241109095404232224.html target="_blank">Leer más</a></p>
             </div>
         </div>
         <div class="noticia">
-                <img src="img/MiniWimWenders-L1024.jpg" class="noticia-img" alt="Noticia 1">
+            <img src="img/WimWenders.jpg" class="noticia-img" alt="Noticia 1">
             <div class="contenido">
                 <h4>Wim Wenders recibe el premio FIAF 2024 en el Maratón de Cine Clásico de Budapest</h4>
                 <p>La FIAF entregó su Premio FIAF 2024 al aclamado cineasta alemán Wim Wenders durante una ceremonia especial en Budapest, Hungría, como parte de la 7ª edición del Maratón de Cine Clásico de Budapest. <a href="https://www.fiafnet.org/pages/Events/wim-wenders-2024-fiaf-award.html" target="_blank">Leer más</a></p>
             </div>
         </div>
         <div class="noticia">
-                <img src="img/RamonRubio.jpg" class="noticia-img" alt="Noticia 2">
+            <img src="img/RamonRubio.jpg" class="noticia-img" alt="Noticia 2">
             <div class="contenido">
                 <h4>Ramón Rubio Lucia, Premio Nacional de Patrimonio Cinematográfico y Audiovisual 2024</h4>
                 <p>El fallo del jurado ha destacado "su incansable, coherente y entusiasta dedicación" en la recuperación de películas y del material documental <a href="https://www.elperiodico.com/es/ocio-y-cultura/20241004/rubio-lucia-premio-nacional-patrimonio-cinematografico-108919746" target="_blank">Leer más</a></p>
             </div>
         </div>
         <div class="noticia">
-                <img src="img/vhs.jpg" class="noticia-img" alt="Noticia 3">
+            <img src="img/vhs.jpg" class="noticia-img" alt="Noticia 3">
             <div class="contenido">
                 <h4>No tires tus antiguas cintas VHS: los coleccionistas ya pagan mucho dinero por ellas</h4>
                 <p>El mundo del audiovisual ha cambiado de forma drástica en las últimas décadas. Antes de que las plataformas de streaming protagonizasen las sesiones de cine en casa, los salones de todo el mundo estaban presididos por el DVD y previamente, las películas se disfrutaban en formato VHS.<a href=https://www.elperiodico.com/es/ocio-y-cultura/20241109/antiguas-cintas-vhs-coleccionistas-pagan-cantidades-dinero-111518292 target="_blank">Leer más</a></p>
             </div>
         </div>
         <div class="noticia">
-                <img src="img/patrimonio.png" class="noticia-img" alt="Noticia 4">
+            <img src="img/patrimonio.png" class="noticia-img" alt="Noticia 4">
             <div class="contenido">
                 <h4>Día Mundial del Patrimonio Audiovisual 2024</h4>
                 <p>Cada 27 de octubre, los archivos audiovisuales de todo el mundo conmemoran el Día Mundial del Patrimonio Audiovisual. Esta fecha es una iniciativa clave de la UNESCO y del Consejo Coordinador de Asociaciones de Archivos Audiovisuales (CCAAA) para celebrar el trabajo de los archivos y sensibilizar sobre la importancia y urgencia de proteger los materiales <a href="https://patrimonioaudiovisual.org/2024/10/27/dia-mundial-del-patrimonio-audiovisual-2023-2/" target="_blank">Leer más</a></p>
             </div>
         </div>
-            <!-- Añade más noticias aquí -->
-    </div>
-<br>
-    <div class="enlaces">
-        <div id="enlaces-pag-peliculas">      
-            <h2>Películas para descargar</h2>
-                <p>El cine es una forma de transmisión de la cultura universal de todos los tiempos a través de distintos medios. </p>
-            <ul>
-            <li>
-                <p><a href="https://archive.org/details/moviesandfilms" target="Archive.org">Internet Archive</a> es el sitio ideal para disfrutar de 5000 películas de dominio público de forma totalmente gratuita (y legal, no lo olvides).</p>
-            </li>
-            <li> 
-                <p><a href="https://classiccinemaonline.com/" target="Classic Cinema">Cine Clásico:</a> las joyas del cine en blanco y negro y los grandes clásicos del Séptimo Arte, se pueden encontrar una buena parte de estas películas.</p>
-            </li>
-            <li> 
-                <p><a href="http://www.dedominiopublico.org/peliculas/" target="De Dominio">De Dominio Público:</a> más de 500 películas pertenecientes al Dominio Público ofrecidas a través de sus canales oficiales, para ver online, en versiones originales, subtituladas y en español.</p>
-            </li>
-            <li> 
-                <p><a href="https://alternopolis.com/5000-pelicula-para-descargar/" target="Alternopolis">5000 películas de Dominio Público para su descarga gratuita:</a> para los amantes del cine, puedes encontrar películas en streaming. Películas de terror, películas de culto, comedias, la elección es muy amplia, selecciona las que más te gustan.</p>
-            </li>
-            <li> 
-                <p><a href="https://www.cinefilia.blog/p/peliculas-de-dominio-publico.html" target="Cinefilia">Cinefilia.blog:</a> lista de películas de dominio público para ver en línea gratis, subtituladas en español y en su versión original. </p>
-            </li>
-            </ul>
-        </div>
-        <div id="enlaces-revistas">
-            <h2>Revistas de cine</h2>
-                <p>Las publicaciones periódicas combinan el análisis de películas, géneros y directores con consideraciones sobre el medio y las condiciones de su producción y recepción.</p>
-            <ul>
-                <li><p><a href="https://www.fotogramas.es/" target="Fotogramas">Fotogramas:</a> es la marca de referencia en cine, es una revista española con información sobre la actualidad cinematográfica: estrenos, trailers, entrevistas y opiniones.</p></li>
-                <li><p><a href="https://www.cahiersducinema.com/" target="CahiersCinema">Cashier du Cinema</a> es una revista de prestigio internacional que ofrece análisis profundos de películas, ensayos críticos sobre filmes contemporáneos y clásicos, entrevistas con directores, actores y otros profesionales de la industria, así como artículos sobre técnicas y tendencias cinematográficas.</p></li>
-                <li><p><a href="https://www.20minutos.es/cinemania/" target="Cinemania">Cinemanía:</a> es una revista de cine fundada en 1995 y dirigida por Carlos Marañón. Se publica mensualmente en España.</p></li>
-                <li><p><a href="https://35milimetros.es/" target="35milimetros">35 milímetros:</a> es una revista especializada en información cinematográfica y series de televisión. Su misión es informar, comentar y opinar sobre la actualidad del mundo audiovisual, tanto en ámbito nacional, regional e internacional.</p></li>
-                <li><p><a href="https://www.elamante.com/" target="ElAmante">El Amante:</a> una revista de corte cultural enfocada en el cine y dedica sus publicaciones a las críticas de los estrenos del mes. Incluyendo también artículos y dossiers sobre directores, cinematografías, festivales y géneros.</p></li>
-            </ul>
-        </div>        
-    </div>
-</section>
-<br><br>
-    <h2>Formularios</h2>
-    <section id="formularios">
-            <form id="registrationForm" action="procesos.php" method="POST">
-                <h3>Formulario de registro</h3>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="ciudad">Ciudad:</label>
-                <input type="text" id="ciudad" name="ciudad" required>
-                <label for="pais">País:</label>
-                <input type="text" id="pais" name="pais" required>            
-                <label for="role">Rol:</label>
-                <select id="role" name="role" required>
-                    <option value="colaborador">Colaborador</option>
-                    <option value="usuario">Usuario</option>
-                </select<>
-                <input type="submit">
-            </form>
-        <br><br><br>
-            <form id="contactForm">
-                <h3>Contacto</h3>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="tel" name="tel" required>                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+        <!-- Añade más noticias aquí -->
+    </section>
+    <section id="enlaces-pag-peliculas" class="sidebar-section">      
+        <h2>Cine para descargar</h2>
+            <p>El cine es una forma de transmisión de la cultura universal de todos los tiempos a través de distintos medios. </p>
+        <ul>
+        <li>
+            <p><a href="https://archive.org/details/moviesandfilms" target="Archive.org">Internet Archive</a> es el sitio ideal para disfrutar de 5000 películas de dominio público de forma totalmente gratuita (y legal, no lo olvides).</p>
+        </li>
+        <li> 
+            <p><a href="https://classiccinemaonline.com/" target="Classic Cinema">Cine Clásico:</a> las joyas del cine en blanco y negro y los grandes clásicos del Séptimo Arte, se pueden encontrar una buena parte de estas películas.</p>
+        </li>
+        <li> 
+            <p><a href="http://www.dedominiopublico.org/peliculas/" target="De Dominio">De Dominio Público:</a> más de 500 películas que son del Dominio Público para ver online, en versiones originales, subtituladas y en español.</p>
+        </li>
+        <li> 
+            <p><a href="https://alternopolis.com/5000-pelicula-para-descargar/" target="Alternopolis">5000 películas de Dominio Público:</a> para los amantes del cine películas de terror, películas de culto, comedias, la elección es muy amplia.</p>
+        </li>
+        <li> 
+            <p><a href="https://www.cinefilia.blog/p/peliculas-de-dominio-publico.html" target="Cinefilia">Cinefilia.blog:</a> lista de películas de dominio público para ver en línea gratis, subtituladas en español y en su versión original. </p>
+        </li>
+        </ul>
+    </section>
+    <section id="enlaces-revistas" class="sidebar-section">
+        <h2>Revistas de cine</h2>
+        <p>Las publicaciones periódicas combinan el análisis de películas, géneros y directores con las condiciones de su producción y recepción.</p>
+        <ul>
+            <li><p><a href="https://www.fotogramas.es/" target="Fotogramas">Fotogramas:</a> es la marca de referencia en cine, información sobre la actualidad cinematográfica: estrenos, trailers, entrevistas y opiniones.</p></li>
+            <li><p><a href="https://www.cahiersducinema.com/" target="CahiersCinema">Cashier du Cinema:</a> ofrece análisis de películas, ensayos críticos de filmes contemporáneos y clásicos, entrevistas y artículos sobre técnicas y tendencias cinematográficas.</p></li>
+            <li><p><a href="https://www.20minutos.es/cinemania/" target="Cinemania">Cinemanía:</a> es una revista de cine fundada en 1995 que se publica mensualmente en España.</p></li>
+            <li><p><a href="https://35milimetros.es/" target="35milimetros">35 milímetros:</a> es una revista especializada en información cinematográfica y series de televisión. Su misión es informar, comentar y opinar sobre la actualidad.</p></li>
+            <li><p><a href="https://www.elamante.com/" target="ElAmante">El Amante:</a> una revista de corte cultural enfocada en el cine y las críticas de los estrenos del mes. Incluyen artículos y dossiers sobre directores, cinematografías, festivales y géneros.</p></li>
+        </ul>
+    </section>   
+    </aside>
+</div>
     <footer>
         <p>&copy; 2024 Cine como Patrimonio. Todos los derechos reservados.</p>
         <img src="favicon.ico" alt="Logo">

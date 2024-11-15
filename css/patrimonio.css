@@ -243,9 +243,13 @@ main::before {
 .formato {
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background-color: #d2b48c;
     border-radius: 8px;
     border: 1px solid #704214;
+    background-image: url(../imgPatrim/fotograma1.png);
+    background-repeat: no-repeat;
+    background-size: 875px;
+    opacity: 0.3;
+    z-index: -1;
 }
 .formato h3 {
     color: #704214;
