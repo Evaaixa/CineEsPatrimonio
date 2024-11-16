@@ -523,3 +523,35 @@ footer {
     width: 100%;
     bottom: 0;
 }
+ /* Estilo 1: Tooltip simple */
+ .tooltip-simple {
+    position: relative;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tooltip-simple::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-simple:hover::after {
+    visibility: visible;
+    opacity: 1;
+}

@@ -11,10 +11,10 @@ fetch('peliculas.json')
       row.innerHTML = `
         <td class="poster-cell">
           <a href="${movie.trailer}" target="_blank">
-            <img src="${movie.poster}" alt="Poster de ${movie.title}">
-          </a>
+            <img src="${movie.poster}" alt="Poster de ${movie.title}" title="Haz clic para ver el trailer de la película"></a>
         </td>
-        <td><a href="criticas.html?pelicula=${movie.id}" target="_blank">${movie.title}</a>
+        <td>
+          <a href="criticas.html?pelicula=${movie.id}" target="_blank" title="Haz clic para acceder a la página de Críticas">${movie.title}</a>
         </td>
         <td>${movie.director}</td>
         <td>${movie.year}</td>

@@ -1,9 +1,9 @@
 <?php
 // Conectar a la base de datos y obtener los datos de la primera película
 $servername = "localhost";
-$username = "root@localhost";
+$username = "root";
 $password = "";
-$dbname = "cine_db";
+$dbname = "";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
