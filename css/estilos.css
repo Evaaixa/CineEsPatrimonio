@@ -702,6 +702,7 @@ img {
 .sidebar1 {
     width: 280px;
     margin: 5px;
+    height: auto;
 }
 .sidebar-section {
     background-color: #d2b48c;
@@ -723,7 +724,11 @@ img {
     color: #555;
     margin-bottom: 10px;
 }
-
+.img-revista {
+    width: 125px;
+    height: auto;
+    margin-right: 5px;
+}
 /* noticias */
 #noticias {
     background-color: #d2b48c;
@@ -760,7 +765,6 @@ img {
     width: 100px;
     height: auto;
     border-radius: 6px;
-
 }
 .noticia-img:hover {
     transform: translateY(-25px);
