@@ -1,9 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = $_POST['nombre'];
-    $telefono = $_POST['tel'];
-    $email = $_POST['email'];
-    $mensaje = $_POST['mensaje'];
+    $nombre = $_POST['nombreContacto'];
+    $telefono = $_POST['telContacto'];
+    $email = $_POST['emailContacto'];
+    $mensaje = $_POST['mensajeContacto'];
 
     // Depuración
     error_log("Nombre: $nombre, Teléfono: $telefono, Email: $email, Mensaje: $mensaje");
