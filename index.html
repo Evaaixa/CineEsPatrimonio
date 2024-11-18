@@ -310,7 +310,7 @@
         </div>
     
         <div class="gallery gallery-center">
-            <h3>Chaplin, siempre Chaplin</h3>
+            <h3>Frases de Chaplin</h3>
             <div class="carousel">
                 <div class="carousel-container" id="carousel-center">
                     <div class="carousel-slide">
@@ -364,7 +364,7 @@
                         <div class="caption">Cámara y Proyectores</div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="img/Proyector.jpeg" alt="Imagen 3">
+                        <img src="img/Proyector-1.jpeg" alt="Imagen 3">
                         <div class="caption">Proyector 35 mm</div>
                     </div>
                     <div class="carousel-slide">
@@ -488,7 +488,7 @@
     <br><br>
     <h2>Formularios</h2>
     <section id="formularios">
-        <form id="registrationForm" action="procesos.php" method="POST">
+        <form id="registrationForm" action="registro.php" method="POST">
             <h3>Formulario de registro</h3>
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
@@ -502,21 +502,21 @@
             <select id="role" name="role" required>
                 <option value="colaborador">Colaborador</option>
                 <option value="usuario">Usuario</option>
-            </select<>
+            </select>
             <input type="submit">
         </form>
         <br><br><br>
-        <form id="contactForm">
-            <h3>Contacto</h3>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="tel" name="tel" required>                
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
+        <form id="contactForm" action="contacto.php" method="POST"> 
+            <h3>Contacto</h3> 
+            <label for="nombreContacto">Nombre:</label> 
+            <input type="text" id="nombreContacto" name="nombreContacto" required> 
+            <label for="telefonoContacto">Teléfono:</label> 
+            <input type="tel" id="telContacto" name="telContacto" required> 
+            <label for="emailContacto">Email:</label> 
+            <input type="email" id="emailContacto" name="emailContacto" required> 
+            <label for="mensajeContacto">Mensaje:</label> 
+            <textarea id="mensajeContacto" name="mensajeContacto" required></textarea> 
+            <button type="submit">Enviar</button> </form>
         </form>
     </section>
 </main>
