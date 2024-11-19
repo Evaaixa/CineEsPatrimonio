@@ -697,6 +697,21 @@ img {
     height: auto;
     cursor: pointer;
 }
+#load-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #704214;
+    cursor: pointer;
+    color: #fff;
+}
+#load-more i {
+    font-size: 3rem;
+    margin: 0 auto;
+}
 
 /* Columna lateral de noticias y enlaces */
 .sidebar1 {
@@ -711,6 +726,7 @@ img {
     padding: 15px;
     text-align: justify;
     font-size: 14px;
+    align-items: center;
 }
 .sidebar-section h2 {
     margin: 0 0 15px 0;
@@ -792,6 +808,87 @@ img {
 }
 .noticia a:hover {
     text-decoration: underline;
+}
+/* Estilos sección infantil */
+.cine_infantil {
+    animation: color-size-change 7s infinite;
+    font-size: 2rem;
+    color: #ff0000;
+}
+@keyframes color-size-change {
+    0% {
+        font-size: 2rem;
+        color: #ff0000;
+    }
+    25% {
+        font-size: 3rem;
+        color: #00ff00;
+    }
+    50% {
+        font-size: 2rem;
+        color: #0000ff;
+    }
+    75% {
+        font-size: 3rem;
+        color: yellow;
+    }
+    100% {
+        font-size: 2rem;
+        color: #ff0000;
+    }
+}
+.sidebar-section-infantil {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 2px solid #ff5722;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.sidebar-section-infantil h2{
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #ff5722;
+}
+.contenido-infantil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item {
+    background-color: #ffffff;
+    border: 2px solid #ff5722;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.item img { 
+    width: 100%; 
+    border-radius: 8px; 
+} 
+.item h3 { 
+    color: #ff5722; 
+    margin: 10px 0;
+} 
+.item p { 
+    color: #666666;
+    font-size: 13px; 
+} 
+.item a { 
+    display: block; 
+    margin-top: 10px; 
+    padding: 10px; 
+    background-color: #ff5722; 
+    color: #ffffff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+} 
+.item a:hover { 
+    background-color: #e64a19;
 }
 
 /* estilos para los formularios */

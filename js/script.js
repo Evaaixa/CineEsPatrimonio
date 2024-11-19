@@ -46,7 +46,14 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     var email = document.getElementById('emailContacto').value; 
     var mensaje = document.getElementById('mensajeContacto').value; 
     
-    if (nombre === '' || telefono === '' || email === '' || mensaje === '') { alert('Por favor, completa todos los campos del formulario de contacto.'); event.preventDefault(); } else { alert('Formulario de contacto enviado correctamente.');
+    if (nombre === '' || telefono === '' || email === '' || mensaje === '') { 
+        alert('Por favor, completa todos los campos del formulario de contacto.'); 
+        event.preventDefault(); 
+    } else { 
+        alert('Formulario de contacto enviado correctamente.');
+    }
+});
+
 // inicializar los carruseles
 const carousels = {};
 const autoplayIntervals = {};
@@ -152,5 +159,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-

@@ -279,15 +279,15 @@
       },
       {
         "id": "La Naranja Mecánica",
-        "title": "La ",
-        "director": "",
+        "title": "La Naranja Mecánica",
+        "director": "Stanley Kubrick",
         "foto": "imgCriticas/", 
         "fotos_adicionales": [
           "imgCriticas/",
           "imgCriticas/",
           "imgCriticas/"
         ], 
-        "year": "",
+        "year": 1971,
         "country": "",
         "comment": " ",
         "poster": "carteles/",

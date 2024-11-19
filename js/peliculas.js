@@ -1,5 +1,5 @@
 let currentIndex = 0; //índice inicial
-const moviesPerPage = 10; //número de películas a cargar por cada vez
+const moviesPerPage = 5; //número de películas a cargar por cada vez
 
 fetch('peliculas.json')
   .then(response => response.json())
@@ -11,7 +11,13 @@ fetch('peliculas.json')
 
     // Función para cargar películas
     const loadMovies = () => {
+      // limpiar el contenedor antes de cargar las nuevas películas
+      allTimeBestTbody.innerHTML = '';
+
+      // obtener las siguientes películas a partir del índice actual
       const nextMovies = allTimeBest.slice(currentIndex, currentIndex + moviesPerPage);
+
+      // agregar las películas al contenedor
       nextMovies.forEach(movie => {
         const row = document.createElement('tr');
         row.innerHTML = `
@@ -29,6 +35,14 @@ fetch('peliculas.json')
         `;
       allTimeBestTbody.appendChild(row);
     });
+
+    // incrementar el índice actual para la próxima carga
+    currentIndex += moviesPerPage;
+
+    // deshabilitar el botón si no hay más películas para cargar
+    if (currentIndex >= allTimeBest.length) {
+      loadMoreButton.style.display = 'none';
+    }
   };
 
   // cargar las películas iniciales
