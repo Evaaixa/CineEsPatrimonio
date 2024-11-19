@@ -36,12 +36,22 @@ body {
     align-items: center;
     text-align: center;
     font-family: cinzel, serif;
+    padding: 20px;
 }
 @keyframes wave {
     0%, 100% { transform: translateX(0) translateY(0);}
     25% { transform: translateX(25%) translateY(-20px);}
     50% { transform: translateX(50%) translateY(0);}
     75% { transform: translateX(75%) translateY(20px);}
+}
+@media (max-width: 768px) {
+    .banner {
+        height: auto;
+        padding: 10px;
+    }
+    .tittle {
+        font-size: 1.5rem;
+    }
 }
 /* barra del navegador */
 nav ul {
@@ -99,16 +109,25 @@ nav ul li a {
     padding: 10px;
     flex: 1;  /* Esto hace que el contenedor ocupe todo el espacio disponible */
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 /* Contenido principal */
 .main-content {
     flex: 1;
     min-width: 0;
+    margin: 5px;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+    }
 }
 
 /* Estilos para el gif animado con marco */
 .contenido-lado {
     display: flex;
+    flex-wrap: nowrap; /*evita que los elementos se ajusten en pantallas grandes */
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
@@ -122,7 +141,6 @@ nav ul li a {
     width: 550px; /* Ajusta según el tamaño de tu marco */
     height: 380px; /* Ajusta según el tamaño de tu marco */
     text-align: center;
-    /* aspect-ratio: 3/2; */
 }
 .marco-fondo {
     width: 65%;        /*55% 80% */
@@ -155,12 +173,30 @@ nav ul li a {
 }
 .texto-al-lado p {
     margin: 0;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.4;
     text-align: justify;
 }
 .texto-al-lado h3 {
     color: #704214;
+}
+/* Media queries para ajustar el diseño en pantallas pequeñas */ 
+@media (max-width: 768px) { 
+    .contenido-lado {
+        flex-direction: column; /*cambia la dirección del flex a columna en pantallas pequeñas */
+    }
+    .marco, .texto-al-lado { 
+        width: 100%; /* Ajusta el ancho máximo en pantallas pequeñas */ 
+    } 
+    .texto-al-lado { 
+        padding: 10px; /* Ajustar el padding en pantallas pequeñas */ 
+    } 
+    .texto-al-lado h3 { 
+        font-size: 1.25rem; /* Ajustar el tamaño del título en pantallas pequeñas */ 
+    } 
+    .texto-al-lado p { 
+        font-size: 0.875rem; /* Ajustar el tamaño del texto en pantallas pequeñas */ 
+    } 
 }
 
 /* Título con sombras en 3d */
@@ -385,6 +421,28 @@ h2, h3 {
 .acordeon-item.activo .acordeon-contenido {
     max-height: 800px; /* Altura máxima cuando está desplegado */
 }
+/* contenedor de la presentación */
+.presentacion { 
+    max-width: 100%; /* Ajustado para que ocupe todo el ancho disponible */ 
+    margin: 0 auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
+} 
+/* Iframe de Prezi */ 
+.presentacion iframe { 
+    width: 100%; /* Ajustado para que ocupe todo el ancho disponible */ 
+    height: auto; /* Ajustado para mantener la relación de aspecto */ 
+    border: none; 
+} 
+/* Media queries para ajustar el diseño en pantallas pequeñas */ 
+@media (max-width: 768px) { 
+    .presentacion { 
+        padding: 10px; /* Ajustar el padding en pantallas pequeñas */ 
+    } 
+    .presentacion iframe { 
+        height: 315px; /* Ajustar la altura en pantallas pequeñas */
+    }
+}
 .enlace-patrimonio { 
     color: #a0522d; /* Color del enlace */ 
     text-decoration: none; /* Sin subrayado */ 
@@ -565,7 +623,7 @@ button:hover {
     font-size: small;
 }
 .video-container {
-    max-width: 800px;
+    max-width: 100%;
     margin: 2rem auto;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -576,6 +634,12 @@ button:hover {
     width: 100%;
     border-radius: 4px;
 }
+@media (max-width: 768px) {
+    .video-container {
+        padding: 1px;
+    }
+}
+
 .carteles {
     display: flex;
     gap: 10px;
@@ -615,11 +679,10 @@ button:hover {
     background-color: #ff1a1a; 
 } 
 .info-container { 
-    width: 100%; 
-    max-width: 760px; 
+    /* width: 100%;  */
     text-align: left; 
     background-color: #8b4513; 
-    padding: 20px; 
+    padding: 20px 10px; 
     border: 1px solid #6d4c41; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 } 
@@ -669,7 +732,7 @@ button:hover {
 }
 #all-time-best-table {
     border-collapse: collapse;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -697,27 +760,53 @@ img {
     height: auto;
     cursor: pointer;
 }
+/* Media queries para ajustar el diseño en pantallas pequeñas */ 
+@media (max-width: 768px) { 
+    #all-time-best-table { 
+        width: 100%; /* Ajusta el ancho máximo en pantallas pequeñas */ 
+    } 
+    #all-time-best-table th, #all-time-best-table td { 
+        font-size: 12px; /* Ajustar el tamaño del texto en pantallas pequeñas */ 
+        padding: 5px; /* Ajustar el padding en pantallas pequeñas */ 
+    } 
+    img { 
+        width: 50px; /* Ajustar el tamaño de las imágenes en pantallas pequeñas */ 
+    }
+}
+/* Contenedor del botón */ 
+.button-container { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    margin: 20px 0; /* Ajusta el margen según sea necesario */ 
+}
+/* botón ver más películas */
 #load-more {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #704214;
+    background-color: #8b4513;
     cursor: pointer;
     color: #fff;
 }
 #load-more i {
-    font-size: 3rem;
-    margin: 0 auto;
+    font-size: 2rem;
 }
 
 /* Columna lateral de noticias y enlaces */
 .sidebar1 {
-    width: 280px;
+    width: 25%;
     margin: 5px;
     height: auto;
+}
+@media (max-width: 768px) {
+    .sidebar1 {
+        width: 100%;
+    }
 }
 .sidebar-section {
     background-color: #d2b48c;
@@ -996,7 +1085,7 @@ footer img:hover {
 
 .scroll-to-top {
     position: fixed;
-    bottom: 20px;
+    bottom: 70px;
     right: 20px;
     color: white;
     width: 50px;
@@ -1010,12 +1099,12 @@ footer img:hover {
     padding: 12px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 1001;
 }
 .scroll-to-top:hover {
     background-color: #b8860b;
     transform: translateY(-2px);
 }
 .scroll-to-top.visible {
-    display: flex;
+    display: flex; /* mostrar el botón cuando tenga la clase 'visible' */
 }

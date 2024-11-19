@@ -1,4 +1,5 @@
 
+// Acordeón de contenido Cine más allá de la pantalla
 document.addEventListener('DOMContentLoaded', function() {
     const acordeonHeaders = document.querySelectorAll('.acordeon-header');
 
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+// Formulario de registro
 document.getElementById('registrationForm').addEventListener('submit', function(event) {
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
@@ -40,6 +41,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     }
 });
 
+// Formulario de contacto
 document.getElementById('contactForm').addEventListener('submit', function(event) { 
     var nombre = document.getElementById('nombreContacto').value; 
     var telefono = document.getElementById('telContacto').value; 
@@ -71,18 +73,15 @@ function initCarousels() {
         startAutoplay(id); // Iniciar autoplay automáticamente
     });
 }
-
 // Mover las diapositivas con transición circular
 function moveSlide(carouselId, direction) {
     const carousel = carousels[carouselId];
     const container = document.getElementById(carouselId);
     
-    carousel.currentSlide = (carousel.currentSlide + direction + carousel.totalSlides) % carousel.totalSlides;
-    
-    // Aplicar la transición
+    carousel.currentSlide = (carousel.currentSlide + direction + carousel.totalSlides) % carousel.totalSlides;   
+// Aplicar la transición
     container.style.transform = `translateX(-${carousel.currentSlide * 100}%)`;
 }
-
 // Iniciar autoplay
 function startAutoplay(carouselId) {
     if (!carousels[carouselId].isPlaying) {
@@ -93,7 +92,6 @@ function startAutoplay(carouselId) {
         }, AUTOPLAY_DELAY);
     }
 }
-
 // Detener autoplay
 function stopAutoplay(carouselId) {
     if (carousels[carouselId].isPlaying) {
@@ -102,7 +100,6 @@ function stopAutoplay(carouselId) {
         clearInterval(autoplayIntervals[carouselId]);
     }
 }
-
 // Alternar autoplay
 function toggleAutoplay(carouselId) {
     if (carousels[carouselId].isPlaying) {
@@ -111,7 +108,6 @@ function toggleAutoplay(carouselId) {
         startAutoplay(carouselId);
     }
 }
-
 // Actualizar el botón de autoplay
 function updateAutoplayButton(carouselId) {
     const carousel = document.getElementById(carouselId).parentElement;
@@ -126,7 +122,6 @@ function updateAutoplayButton(carouselId) {
         pauseIcon.style.display = 'none';
     }
 }
-
 // Pausar autoplay cuando el usuario interactúa con los botones de navegación
 document.querySelectorAll('.carousel-button').forEach(button => {
     button.addEventListener('mouseenter', () => {
@@ -134,15 +129,14 @@ document.querySelectorAll('.carousel-button').forEach(button => {
         stopAutoplay(carouselId);
     });
 });
-  
-  
 // Inicializar cuando el documento esté listo
 document.addEventListener('DOMContentLoaded', initCarousels); 
 
+// botón para desplazar hacia arriba la página
 document.addEventListener('DOMContentLoaded', function() {
     const scrollToTopBtn = document.getElementById('scrollToTopBtn');
     
-    // Mostrar/ocultar el botón según la posición del scroll
+// Mostrar/ocultar el botón según la posición del scroll
     window.addEventListener('scroll', function() {
         if (window.scrollY > 300) {
             scrollToTopBtn.classList.add('visible');
